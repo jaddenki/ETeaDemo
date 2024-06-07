@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MatchaSelection : MonoBehaviour
+public class FruitTea : MonoBehaviour
 {
     public PlayerInput playerInput;
 

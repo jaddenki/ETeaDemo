@@ -5,6 +5,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -36,8 +37,12 @@ public class PlayerInput : MonoBehaviour
     public GameObject flavorStationUI;
     public GameObject sugarLevelStationUI;
     public GameObject toppingsStationUI;
+    public GameObject Qpc1;
+    public GameObject Qpc2;
+    public GameObject Qpc3;
+    public GameObject Qpc4;
 
-     public OrderQueue orderQueue;
+    public OrderQueue orderQueue;
 
     // for the delay!!!
     private float inputDelay = 0.2f;  // how long u want
@@ -111,26 +116,37 @@ public class PlayerInput : MonoBehaviour
                 spriteRenderer.sprite = space2Sprite;
                 break;
             case 4:
-               // Debug.Log("Toppings Station");
+                // Debug.Log("Toppings Station");
+                Qpc1.SetActive(false);
+                Qpc2.SetActive(false);
+                Qpc3.SetActive(false);
+                Qpc4.SetActive(false);
                 spriteRenderer.sprite = toppingsSprite;
                 toppingsStationUI.SetActive(true);
                 break;
             case 5:
                // Debug.Log("Serve Babe");
                 toppingsStationUI.SetActive(false);
+                Qpc1.SetActive(true);
+                Qpc2.SetActive(true);
+                Qpc3.SetActive(true);
+                Qpc4.SetActive(true);
                 spriteRenderer.sprite = trynaServeSprite;
-                ServeOrder();
                 break;
         }
     }
 
-    private void ServeOrder()
+    public void ServeOrder(int customerIndex)
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        try
         {
-            Order currentOrder = orderQueue.GetCurrentOrder();
+            Debug.Log("Now serving customer: " + customerIndex);
+
+            Order currentOrder = orderQueue.ordersQueue[customerIndex - 1];
+            Debug.Log("current order " + currentOrder.ToString());
             if (currentOrder != null)
             {
+
                 currentOrderArray[0] = currentOrder.FlavorChoice;
                 currentOrderArray[1] = currentOrder.SugarChoice;
                 currentOrderArray[2] = currentOrder.ToppingChoice;
@@ -150,6 +166,10 @@ public class PlayerInput : MonoBehaviour
                 Debug.Log("none");
             }
         }
+        catch (NullReferenceException ex) // in case they try to submit with an item not selected
+        {
+            Debug.Log("WRONGGGGGG. loser");
+        }
     }
         // update selection array
         public void UpdateSelection(object selection)
@@ -168,10 +188,9 @@ public class PlayerInput : MonoBehaviour
         }
 
         // print to debug log
-        string selectionsLog = "Current Selections:\n";
-        selectionsLog += "Flavor: " + recentSelections[0] + "\n";
-        selectionsLog += "Ice Sugar Level: " + recentSelections[1] + "\n";
-        selectionsLog += "Topping: " + recentSelections[2] + "\n";
+        string selectionsLog = "Flavor: " + recentSelections[0];
+        selectionsLog += ", Ice Sugar Level: " + recentSelections[1];
+        selectionsLog += ", Topping: " + recentSelections[2];
         Debug.Log(selectionsLog);
         }
     private bool CheckOrderMatch(object currentOrder)

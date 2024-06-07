@@ -3,7 +3,17 @@ guid: e2c51e3bf1b1e0c48872f1d5248d5302
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - startSprite: {fileID: 21300000, guid: 0613fc996a54d7e43825dad01a8fc556, type: 3}
+  - flavorSprite: {fileID: 21300000, guid: d4aef703ea9c1384e9074dc6e7c8c80c, type: 3}
+  - space1Sprite: {fileID: 21300000, guid: fef58ff3f08b01247ad77b9837030a57, type: 3}
+  - iceSugarSprite: {fileID: 21300000, guid: 2f6477701eb3a714ea98154708f88599, type: 3}
+  - space2Sprite: {fileID: 21300000, guid: 2bd3256272b626e40a87ad21e56081b3, type: 3}
+  - toppingsSprite: {fileID: 21300000, guid: 2591a0537e22b9c4eb1432b2995f4cbf, type: 3}
+  - trynaServeSprite: {fileID: 21300000, guid: 886137fd32bc8e84c8a8c7f7ac792d9b, type: 3}
+  - flavorStationUI: {instanceID: 0}
+  - sugarLevelStationUI: {instanceID: 0}
+  - toppingsStationUI: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

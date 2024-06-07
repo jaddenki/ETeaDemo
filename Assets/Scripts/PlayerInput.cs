@@ -28,12 +28,17 @@ public class PlayerInput : MonoBehaviour
     public Sprite iceSugarSprite;
     public Sprite space2Sprite;
     public Sprite toppingsSprite;
+    public Sprite trynaServeSprite;
 
     private SpriteRenderer spriteRenderer;
 
     public GameObject flavorStationUI;
     public GameObject sugarLevelStationUI;
     public GameObject toppingsStationUI;
+
+    // for the delay!!!
+    private float inputDelay = 0.2f;  // how long u want
+    private float lastInputTime = 0f; 
 
     void Start()
     {
@@ -45,55 +50,61 @@ public class PlayerInput : MonoBehaviour
     void Update()
     {
         // when u wanna switch stations
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Time.time - lastInputTime >= inputDelay) // did enough time pass ?!?!
         {
-            if (currentStation > 0)
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                currentStation--;
+                if (currentStation > 0)
+                {
+                    currentStation--;
+                    lastInputTime = Time.time;
+                }
             }
-        }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            if (currentStation < 5)
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
             {
-                currentStation++;
+                if (currentStation < 5)
+                {
+                    currentStation++;
+                    lastInputTime = Time.time;
+                }
             }
         }
 
-        // selecting stuff at their stations
-        switch (currentStation)
+            // selecting stuff at their stations
+            switch (currentStation)
         {
             case 0:
-                Debug.Log("Flavor Station");
+               // Debug.Log("Flavor Station");
                 // under here we want it to open the station UI and show 
                 spriteRenderer.sprite = flavorSprite;
                 flavorStationUI.SetActive(true);
                 break;
             case 1:
-                Debug.Log("Open Space 1");
+               // Debug.Log("Open Space 1");
                 flavorStationUI.SetActive(false);
                 sugarLevelStationUI.SetActive(false);
                 spriteRenderer.sprite = space1Sprite;
                 break;
             case 2:
-                Debug.Log("Sugar Level Station");
+               // Debug.Log("Sugar Level Station");
                 spriteRenderer.sprite = iceSugarSprite;
                 sugarLevelStationUI.SetActive(true);
                 break;
             case 3:
-                Debug.Log("Open Space 2");
+               // Debug.Log("Open Space 2");
                 sugarLevelStationUI.SetActive(false);
                 toppingsStationUI.SetActive(false);
                 spriteRenderer.sprite = space2Sprite;
                 break;
             case 4:
-                Debug.Log("Toppings Station");
+               // Debug.Log("Toppings Station");
                 spriteRenderer.sprite = toppingsSprite;
                 toppingsStationUI.SetActive(true);
                 break;
             case 5:
-                Debug.Log("Serve Babe");
+               // Debug.Log("Serve Babe");
                 toppingsStationUI.SetActive(false);
+                spriteRenderer.sprite = trynaServeSprite;
                 break;
         }
     }

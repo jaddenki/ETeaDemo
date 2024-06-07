@@ -31,8 +31,10 @@ public enum Topping
     LycheeJelly
 }
 
+
 public class Order
 {
+    private static int customerCt = 0;
     public string CustomerName { get; set; }
     public Flavor FlavorChoice { get; set; }
     public SugarLevel SugarChoice { get; set; }
@@ -45,15 +47,16 @@ public class Order
         Flavor randomFlavor = (Flavor)random.Next(Enum.GetValues(typeof(Flavor)).Length);
         SugarLevel randomSugar = (SugarLevel)random.Next(Enum.GetValues(typeof(SugarLevel)).Length);
         Topping randomTopping = (Topping)random.Next(Enum.GetValues(typeof(Topping)).Length);
-
+        customerCt++;
         // make order
         return new Order
         {
-            CustomerName = "Customer " + random.Next(1, 100), // errr customer number? we could do names if uwant
+            CustomerName = "Customer " + customerCt, // errr customer number? we could do names if uwant
             FlavorChoice = randomFlavor,
             SugarChoice = randomSugar,
             ToppingChoice = randomTopping
         };
+
     }
 
     // wait wait iwati

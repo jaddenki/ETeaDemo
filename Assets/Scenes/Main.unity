@@ -646,6 +646,7 @@ MonoBehaviour:
   flavorStationUI: {fileID: 1426587903}
   sugarLevelStationUI: {fileID: 1653811729}
   toppingsStationUI: {fileID: 804953922}
+  orderQueue: {fileID: 1052068577}
 --- !u!212 &689814896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1461,6 +1462,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 689814895}
+--- !u!1 &1052068576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1052068578}
+  - component: {fileID: 1052068577}
+  m_Layer: 0
+  m_Name: Order Queue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1052068577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052068576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b8739519ba06324389139b31262cdea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxOrders: 4
+--- !u!4 &1052068578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052068576}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.7479753, y: 5.3583302, z: -7.216821}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1103374238
 GameObject:
   m_ObjectHideFlags: 0
@@ -3240,3 +3286,4 @@ SceneRoots:
   - {fileID: 2062005335}
   - {fileID: 1906237448}
   - {fileID: 1604700516}
+  - {fileID: 1052068578}

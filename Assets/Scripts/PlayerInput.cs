@@ -20,6 +20,7 @@ public class PlayerInput : MonoBehaviour
     public Topping selectedTopping;
 
     private object[] recentSelections = new object[3];
+    private object[] currentOrderArray = new object[3]; // customer order
 
     // sprites for each station
     public Sprite startSprite;
@@ -36,16 +37,29 @@ public class PlayerInput : MonoBehaviour
     public GameObject sugarLevelStationUI;
     public GameObject toppingsStationUI;
 
+     public OrderQueue orderQueue;
+
     // for the delay!!!
     private float inputDelay = 0.2f;  // how long u want
-    private float lastInputTime = 0f; 
+    private float lastInputTime = 0f;
+
+
 
     void Start()
     {
         // sets initial sprite to the blank one
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = startSprite;
+
+        // order queue
+        if (orderQueue == null)
+        {
+            orderQueue = FindObjectOfType<OrderQueue>();
+        }
+        orderQueue.AddRandomOrder(); // add order
     }
+
+
 
     void Update()
     {
@@ -105,12 +119,41 @@ public class PlayerInput : MonoBehaviour
                // Debug.Log("Serve Babe");
                 toppingsStationUI.SetActive(false);
                 spriteRenderer.sprite = trynaServeSprite;
+                ServeOrder();
                 break;
         }
     }
-    // update selection array
-    public void UpdateSelection(object selection)
+
+    private void ServeOrder()
     {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            Order currentOrder = orderQueue.GetCurrentOrder();
+            if (currentOrder != null)
+            {
+                currentOrderArray[0] = currentOrder.FlavorChoice;
+                currentOrderArray[1] = currentOrder.SugarChoice;
+                currentOrderArray[2] = currentOrder.ToppingChoice;
+
+                if (CheckOrderMatch(currentOrder))
+                {
+                    Debug.Log("slayed!");
+                    orderQueue.ServeCurrentOrder();
+                }
+                else
+                {
+                    Debug.Log("WRONGGGGGG.");
+                }
+            }
+            else
+            {
+                Debug.Log("none");
+            }
+        }
+    }
+        // update selection array
+        public void UpdateSelection(object selection)
+        {
         switch (currentStation)
         {
             case 0:
@@ -130,5 +173,18 @@ public class PlayerInput : MonoBehaviour
         selectionsLog += "Ice Sugar Level: " + recentSelections[1] + "\n";
         selectionsLog += "Topping: " + recentSelections[2] + "\n";
         Debug.Log(selectionsLog);
+        }
+    private bool CheckOrderMatch(object currentOrder)
+    {
+       
+        for (int i = 0; i < recentSelections.Length; i++)
+        {
+            Debug.Log($"{recentSelections[i]} x {currentOrderArray[i]}");
+            if (recentSelections[i].ToString() != currentOrderArray[i].ToString())
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }

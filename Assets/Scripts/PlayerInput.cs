@@ -19,7 +19,7 @@ public class PlayerInput : MonoBehaviour
     public SugarLevel selectedSugar;
     public Topping selectedTopping;
 
-    private object[] recentSelections = new object[4];
+    private object[] recentSelections = new object[3];
 
     // sprites for each station
     public Sprite startSprite;
@@ -111,9 +111,6 @@ public class PlayerInput : MonoBehaviour
             case 4:
                 recentSelections[2] = selection;
                 break;
-            case 5:
-                recentSelections[3] = selection;
-                break;
         }
 
         // print to debug log
@@ -121,7 +118,6 @@ public class PlayerInput : MonoBehaviour
         selectionsLog += "Flavor: " + recentSelections[0] + "\n";
         selectionsLog += "Ice Sugar Level: " + recentSelections[1] + "\n";
         selectionsLog += "Topping: " + recentSelections[2] + "\n";
-        selectionsLog += "Customer Served: " + recentSelections[3];
         Debug.Log(selectionsLog);
     }
 }

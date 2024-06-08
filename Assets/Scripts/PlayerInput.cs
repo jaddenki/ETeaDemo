@@ -40,13 +40,21 @@ public class PlayerInput : MonoBehaviour
     public GameObject Qpc1;
     public GameObject Qpc2;
     public GameObject Qpc3;
-    public GameObject Qpc4;
+
+    public GameObject[] qpcImages; // Array of QPC images
+
+
+    private BoxCollider2D qpc1Collider;
+    private BoxCollider2D qpc2Collider;
+    private BoxCollider2D qpc3Collider;
 
     public OrderQueue orderQueue;
 
     // for the delay!!!
     private float inputDelay = 0.2f;  // how long u want
     private float lastInputTime = 0f;
+
+    public DisplayDrink displayDrink;
 
 
 
@@ -61,7 +69,16 @@ public class PlayerInput : MonoBehaviour
         {
             orderQueue = FindObjectOfType<OrderQueue>();
         }
-        orderQueue.AddRandomOrder(); // add order
+        //orderQueue.AddRandomOrder(); // first order
+
+        qpc1Collider = Qpc1.GetComponent<BoxCollider2D>();
+        qpc2Collider = Qpc2.GetComponent<BoxCollider2D>();
+        qpc3Collider = Qpc3.GetComponent<BoxCollider2D>();
+
+        qpcImages = new GameObject[] { Qpc2, Qpc3, Qpc1 };
+
+        displayDrink.LetGo();
+        canClickQPC(false);
     }
 
 
@@ -91,7 +108,7 @@ public class PlayerInput : MonoBehaviour
 
             // selecting stuff at their stations
             switch (currentStation)
-        {
+         {
             case 0:
                // Debug.Log("Flavor Station");
                 // under here we want it to open the station UI and show 
@@ -117,32 +134,59 @@ public class PlayerInput : MonoBehaviour
                 break;
             case 4:
                 // Debug.Log("Toppings Station");
-                Qpc1.SetActive(false);
-                Qpc2.SetActive(false);
-                Qpc3.SetActive(false);
-                Qpc4.SetActive(false);
+
                 spriteRenderer.sprite = toppingsSprite;
                 toppingsStationUI.SetActive(true);
+                canClickQPC(false);
                 break;
             case 5:
                // Debug.Log("Serve Babe");
                 toppingsStationUI.SetActive(false);
-                Qpc1.SetActive(true);
-                Qpc2.SetActive(true);
-                Qpc3.SetActive(true);
-                Qpc4.SetActive(true);
+
+                canClickQPC(true);
+
                 spriteRenderer.sprite = trynaServeSprite;
                 break;
+            }
+
+        // display customer queue
+        switch(orderQueue.orderNumber % 3)
+        {
+            case 0:
+                Qpc1.SetActive(true);
+                break;
+            case 1:
+                Qpc2.SetActive(true);
+                break;
+            case 2:
+                Qpc3.SetActive(true);
+                break;
+            default:
+                Qpc1.SetActive(false);
+                Qpc2.SetActive(false);
+                Qpc3.SetActive(false);
+                break;
+
         }
+  
+    }
+
+
+
+    public void removeQPC(int i)
+    {
+      qpcImages[i].SetActive(false);
     }
 
     public void ServeOrder(int customerIndex)
     {
+
         try
         {
             Debug.Log("Now serving customer: " + customerIndex);
 
             Order currentOrder = orderQueue.ordersQueue[customerIndex - 1];
+
             Debug.Log("current order " + currentOrder.ToString());
             if (currentOrder != null)
             {
@@ -155,6 +199,9 @@ public class PlayerInput : MonoBehaviour
                 {
                     Debug.Log("slayed!");
                     orderQueue.ServeCurrentOrder();
+                    Debug.Log("Order served. Remaining Orders: " + orderQueue.ordersQueue.Count);
+                    removeQPC(customerIndex - 1);
+                    displayDrink.LetGo();
                 }
                 else
                 {
@@ -170,6 +217,7 @@ public class PlayerInput : MonoBehaviour
         {
             Debug.Log("WRONGGGGGG. loser");
         }
+  
     }
         // update selection array
         public void UpdateSelection(object selection)
@@ -178,12 +226,15 @@ public class PlayerInput : MonoBehaviour
         {
             case 0:
                 recentSelections[0] = selection;
+                //displayDrink.UpdateMaHand(selection, 0);
                 break;
             case 2:
                 recentSelections[1] = selection;
+                //displayDrink.UpdateMaHand(selection, 1);
                 break;
             case 4:
                 recentSelections[2] = selection;
+                //displayDrink.UpdateMaHand(selection, 2);
                 break;
         }
 
@@ -206,4 +257,12 @@ public class PlayerInput : MonoBehaviour
         }
         return true;
     }
+
+    private void canClickQPC(bool yas)
+    {
+        qpc1Collider.enabled = yas;
+        qpc2Collider.enabled = yas;
+        qpc3Collider.enabled = yas;
+    }
+
 }

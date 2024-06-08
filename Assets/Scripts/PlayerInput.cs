@@ -185,7 +185,7 @@ public class PlayerInput : MonoBehaviour
         {
             Debug.Log("Now serving customer: " + customerIndex);
 
-            Order currentOrder = orderQueue.ordersQueue[customerIndex];
+            Order currentOrder = orderQueue.ordersQueue[customerIndex - 1];
 
             Debug.Log("current order " + currentOrder.ToString());
             if (currentOrder != null)
@@ -200,7 +200,7 @@ public class PlayerInput : MonoBehaviour
                     Debug.Log("slayed!");
                     orderQueue.ServeCurrentOrder();
                     Debug.Log("Order served. Remaining Orders: " + orderQueue.ordersQueue.Count);
-                    removeQPC(customerIndex);
+                    removeQPC(customerIndex - 1);
                     displayDrink.LetGo();
                 }
                 else

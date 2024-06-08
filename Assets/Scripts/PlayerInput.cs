@@ -54,6 +54,8 @@ public class PlayerInput : MonoBehaviour
     private float inputDelay = 0.2f;  // how long u want
     private float lastInputTime = 0f;
 
+    public DisplayDrink displayDrink;
+
 
 
     void Start()
@@ -75,7 +77,7 @@ public class PlayerInput : MonoBehaviour
 
         qpcImages = new GameObject[] { Qpc2, Qpc3, Qpc1 };
 
-
+        displayDrink.LetGo();
         canClickQPC(false);
     }
 
@@ -198,6 +200,7 @@ public class PlayerInput : MonoBehaviour
                     orderQueue.ServeCurrentOrder();
                     Debug.Log("Order served. Remaining Orders: " + orderQueue.ordersQueue.Count);
                     removeQPC(customerIndex);
+                    displayDrink.LetGo();
                 }
                 else
                 {
@@ -222,12 +225,15 @@ public class PlayerInput : MonoBehaviour
         {
             case 0:
                 recentSelections[0] = selection;
+                //displayDrink.UpdateMaHand(selection, 0);
                 break;
             case 2:
                 recentSelections[1] = selection;
+                //displayDrink.UpdateMaHand(selection, 1);
                 break;
             case 4:
                 recentSelections[2] = selection;
+                //displayDrink.UpdateMaHand(selection, 2);
                 break;
         }
 

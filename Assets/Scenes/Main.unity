@@ -1199,6 +1199,7 @@ MonoBehaviour:
   - {fileID: 1142337546}
   - {fileID: 217811542}
   orderQueue: {fileID: 1052068577}
+  displayDrink: {fileID: 1393107929}
 --- !u!212 &689814896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3034,7 +3035,7 @@ Transform:
   m_GameObject: {fileID: 1285847077}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.05}
+  m_LocalPosition: {x: 0, y: 0, z: -0.055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3053,6 +3054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 689814895}
+  displayDrink: {fileID: 1393107929}
 --- !u!61 &1285847080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3262,7 +3264,7 @@ Transform:
   m_GameObject: {fileID: 1327735871}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.05}
+  m_LocalPosition: {x: 0, y: 0, z: -0.055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3281,6 +3283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 689814895}
+  displayDrink: {fileID: 1393107929}
 --- !u!61 &1327735874
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3556,6 +3559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1393107927}
   - component: {fileID: 1393107928}
+  - component: {fileID: 1393107929}
   m_Layer: 0
   m_Name: hand display
   m_TagString: Untagged
@@ -3633,6 +3637,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1393107929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393107926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13929aa2fad1fd9499d10ae52f94773e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clear: {fileID: 21300000, guid: 468252f6f1509424c83596d71eb18ee5, type: 3}
+  flavorImg:
+  - {fileID: 21300000, guid: 3bafe993528474f4e83dba7ffd462599, type: 3}
+  - {fileID: 21300000, guid: 745c17093ca0e794bab7c0dbdd8e7a39, type: 3}
+  - {fileID: 21300000, guid: 69c89383445462248a45fd14e19dde46, type: 3}
+  - {fileID: 21300000, guid: 700657bb208c9024cb4659785a9f4bc1, type: 3}
+  flavorDisp: {fileID: 1161041402}
+  sugarImg:
+  - {fileID: 21300000, guid: 4292563d125364e4da850a318584be3d, type: 3}
+  - {fileID: 21300000, guid: 07b6ec73b7577e3428f3d57a3b8f6557, type: 3}
+  - {fileID: 21300000, guid: cea93d78d7ff94944b36d7820c91efdb, type: 3}
+  - {fileID: 21300000, guid: 9cf9c2ab033ebc848a7d9fb2c3f93a54, type: 3}
+  sugarDisp: {fileID: 1345361902}
+  toppingImg:
+  - {fileID: 21300000, guid: 1eacfd1f0e8a67c4487241dc9c4fb458, type: 3}
+  - {fileID: 21300000, guid: 4ea735449c9c1764385c10f581ea94a3, type: 3}
+  - {fileID: 21300000, guid: 459e503ea81b9014caa067316d265cd4, type: 3}
+  - {fileID: 21300000, guid: b584ef319a26d18418779d5829f35945, type: 3}
+  toppingDisp: {fileID: 760441845}
 --- !u!1 &1426587903
 GameObject:
   m_ObjectHideFlags: 0
@@ -4061,7 +4096,7 @@ Transform:
   m_GameObject: {fileID: 1522096860}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.05}
+  m_LocalPosition: {x: 0, y: 0, z: -0.055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4080,6 +4115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 689814895}
+  displayDrink: {fileID: 1393107929}
 --- !u!61 &1522096863
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5166,7 +5202,7 @@ Transform:
   m_GameObject: {fileID: 2005083978}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.05}
+  m_LocalPosition: {x: 0, y: 0, z: -0.055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5185,6 +5221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 689814895}
+  displayDrink: {fileID: 1393107929}
 --- !u!61 &2005083981
 BoxCollider2D:
   m_ObjectHideFlags: 0

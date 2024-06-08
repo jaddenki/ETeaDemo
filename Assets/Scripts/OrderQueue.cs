@@ -8,9 +8,9 @@ using UnityEngine;
 public class OrderQueue : MonoBehaviour
 {
     public List<Order> ordersQueue = new List<Order>();
-    public int maxOrders = 4;
+    public int maxOrders = 3;
     public float orderInterval = 5f; // 20 seconds?!?!?!?
-    private int orderNumber = 0;
+    public int orderNumber = 0;
 
     void Start()
     {

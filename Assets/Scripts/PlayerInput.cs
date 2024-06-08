@@ -40,7 +40,12 @@ public class PlayerInput : MonoBehaviour
     public GameObject Qpc1;
     public GameObject Qpc2;
     public GameObject Qpc3;
-    public GameObject Qpc4;
+    //public GameObject Qpc4;
+
+    
+    private BoxCollider2D qpc1Collider;
+    private BoxCollider2D qpc2Collider;
+    private BoxCollider2D qpc3Collider;
 
     public OrderQueue orderQueue;
 
@@ -61,7 +66,14 @@ public class PlayerInput : MonoBehaviour
         {
             orderQueue = FindObjectOfType<OrderQueue>();
         }
-        orderQueue.AddRandomOrder(); // add order
+        //orderQueue.AddRandomOrder(); // first order
+
+        qpc1Collider = Qpc1.GetComponent<BoxCollider2D>();
+        qpc2Collider = Qpc2.GetComponent<BoxCollider2D>();
+        qpc3Collider = Qpc3.GetComponent<BoxCollider2D>();
+
+
+        canClickQPC(false);
     }
 
 
@@ -91,7 +103,7 @@ public class PlayerInput : MonoBehaviour
 
             // selecting stuff at their stations
             switch (currentStation)
-        {
+         {
             case 0:
                // Debug.Log("Flavor Station");
                 // under here we want it to open the station UI and show 
@@ -117,23 +129,41 @@ public class PlayerInput : MonoBehaviour
                 break;
             case 4:
                 // Debug.Log("Toppings Station");
-                Qpc1.SetActive(false);
-                Qpc2.SetActive(false);
-                Qpc3.SetActive(false);
-                Qpc4.SetActive(false);
+
                 spriteRenderer.sprite = toppingsSprite;
                 toppingsStationUI.SetActive(true);
+                canClickQPC(false);
                 break;
             case 5:
                // Debug.Log("Serve Babe");
                 toppingsStationUI.SetActive(false);
-                Qpc1.SetActive(true);
-                Qpc2.SetActive(true);
-                Qpc3.SetActive(true);
-                Qpc4.SetActive(true);
+
+                canClickQPC(true);
+
                 spriteRenderer.sprite = trynaServeSprite;
                 break;
+            }
+
+        // display customer queue
+        switch(orderQueue.orderNumber % 3)
+        {
+            case 0:
+                Qpc1.SetActive(true);
+                break;
+            case 1:
+                Qpc2.SetActive(true);
+                break;
+            case 2:
+                Qpc3.SetActive(true);
+                break;
+            default:
+                Qpc1.SetActive(false);
+                Qpc2.SetActive(false);
+                Qpc3.SetActive(false);
+                break;
+
         }
+  
     }
 
     public void ServeOrder(int customerIndex)
@@ -206,4 +236,12 @@ public class PlayerInput : MonoBehaviour
         }
         return true;
     }
+
+    private void canClickQPC(bool yas)
+    {
+        qpc1Collider.enabled = yas;
+        qpc2Collider.enabled = yas;
+        qpc3Collider.enabled = yas;
+    }
+
 }

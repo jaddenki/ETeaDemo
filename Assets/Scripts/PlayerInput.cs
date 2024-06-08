@@ -6,13 +6,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using TMPro;
+
 public class PlayerInput : MonoBehaviour
 {
-    public TextMeshProUGUI moneyText;
-
-    private int currentStation = 0;
-    public int customerCounter = 0;
+    public int currentStation = 0;
 
     // placeholder selection options
     public enum Flavor { Taro, Matcha, FruitTea, Thai}
@@ -205,9 +202,6 @@ public class PlayerInput : MonoBehaviour
                     Debug.Log("Order served. Remaining Orders: " + orderQueue.ordersQueue.Count);
                     removeQPC(customerIndex - 1);
                     displayDrink.LetGo();
-                    customerCounter += 6;
-                    moneyText.text = customerCounter.ToString();
-                    Debug.Log("u got" + customerCounter + " dollars!");
                 }
                 else
                 {

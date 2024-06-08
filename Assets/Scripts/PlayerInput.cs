@@ -40,9 +40,10 @@ public class PlayerInput : MonoBehaviour
     public GameObject Qpc1;
     public GameObject Qpc2;
     public GameObject Qpc3;
-    //public GameObject Qpc4;
 
-    
+    public GameObject[] qpcImages; // Array of QPC images
+
+
     private BoxCollider2D qpc1Collider;
     private BoxCollider2D qpc2Collider;
     private BoxCollider2D qpc3Collider;
@@ -71,6 +72,8 @@ public class PlayerInput : MonoBehaviour
         qpc1Collider = Qpc1.GetComponent<BoxCollider2D>();
         qpc2Collider = Qpc2.GetComponent<BoxCollider2D>();
         qpc3Collider = Qpc3.GetComponent<BoxCollider2D>();
+
+        qpcImages = new GameObject[] { Qpc2, Qpc3, Qpc1 };
 
 
         canClickQPC(false);
@@ -166,8 +169,16 @@ public class PlayerInput : MonoBehaviour
   
     }
 
+
+
+    public void removeQPC(int i)
+    {
+      qpcImages[i].SetActive(false);
+    }
+
     public void ServeOrder(int customerIndex)
     {
+
         try
         {
             Debug.Log("Now serving customer: " + customerIndex);
@@ -185,6 +196,8 @@ public class PlayerInput : MonoBehaviour
                 {
                     Debug.Log("slayed!");
                     orderQueue.ServeCurrentOrder();
+                    Debug.Log("Order served. Remaining Orders: " + orderQueue.ordersQueue.Count);
+                    removeQPC(customerIndex);
                 }
                 else
                 {
@@ -200,6 +213,7 @@ public class PlayerInput : MonoBehaviour
         {
             Debug.Log("WRONGGGGGG. loser");
         }
+  
     }
         // update selection array
         public void UpdateSelection(object selection)

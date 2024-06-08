@@ -1,11 +1,5 @@
-/* hai if ur reading this im tryna be organized so
- * 
- * THIS SCRIPT IS FOR THE ORDER CLASS & DATA STRUCTURES WAHTEVEVER.
- * so it'll include the flavors, sugar levels, and toppings
- * 
- */
-
 using System;
+using UnityEngine;
 
 public enum Flavor
 {
@@ -39,6 +33,10 @@ public class Order
     public Flavor FlavorChoice { get; set; }
     public SugarLevel SugarChoice { get; set; }
     public Topping ToppingChoice { get; set; }
+    
+    // customer patience shit
+    public float creationTime; 
+    public float lifespan = 20f; 
 
     public static Order GenerateRandomOrder()
     {
@@ -48,13 +46,15 @@ public class Order
         SugarLevel randomSugar = (SugarLevel)random.Next(Enum.GetValues(typeof(SugarLevel)).Length);
         Topping randomTopping = (Topping)random.Next(Enum.GetValues(typeof(Topping)).Length);
         customerCt++;
+
         // make order
         return new Order
         {
-            CustomerName = "Customer " + customerCt, // errr customer number? we could do names if uwant
+            CustomerName = "Customer " + customerCt,
             FlavorChoice = randomFlavor,
             SugarChoice = randomSugar,
-            ToppingChoice = randomTopping
+            ToppingChoice = randomTopping,
+            creationTime = Time.time
         };
 
     }
@@ -63,5 +63,11 @@ public class Order
     public override string ToString()
     {
         return $"Order for {CustomerName}: Flavor - {FlavorChoice}, Sugar - {SugarChoice}, Topping - {ToppingChoice}";
+    }
+
+    // byebye
+    public bool IsExpired()
+    {
+        return (Time.time - creationTime) > lifespan;
     }
 }

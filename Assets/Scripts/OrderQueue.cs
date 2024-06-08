@@ -14,20 +14,17 @@ public class OrderQueue : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Gimme an Order");
         StartCoroutine(AddOrdersAtIntervals());
     }
 
     private IEnumerator AddOrdersAtIntervals()
     {
-        Debug.Log("HAI");
         while (true) // infinite loop for continuous order generation
         {
             if (orderNumber < maxOrders)
             {
                 AddRandomOrder();
-                Debug.Log("New Order Added. Total Orders: " + ordersQueue.Count);
-                Debug.Log("i'm here");
+                Debug.Log("added order! total orders: " + ordersQueue.Count);
             }
             else
             {

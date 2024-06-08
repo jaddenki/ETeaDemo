@@ -674,6 +674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 689814895}
+  displayDrink: {fileID: 1393107929}
 --- !u!61 &177289758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -782,7 +783,6 @@ GameObject:
   - component: {fileID: 217811546}
   - component: {fileID: 217811545}
   - component: {fileID: 217811544}
-  - component: {fileID: 217811543}
   m_Layer: 0
   m_Name: Qpc3
   m_TagString: Untagged
@@ -790,33 +790,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &217811543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 217811542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 507ab51699c9b9243be9a973da7985ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flavorSprites:
-  - {fileID: 21300000, guid: 7b3fc6422c43f2a448389ad4e16ece38, type: 3}
-  - {fileID: 21300000, guid: 8caf870ec5637c9488e17fa4868498b6, type: 3}
-  - {fileID: 21300000, guid: 242660f8a1e91ad47be930b4b6211fc8, type: 3}
-  - {fileID: 21300000, guid: ca5468de48cb5bb4396a90220869b970, type: 3}
-  sugarSprites:
-  - {fileID: 21300000, guid: 8c701374cf3fbef49be75466e4c88f36, type: 3}
-  - {fileID: 21300000, guid: 23382677b1b1a5849b57f45d910959cb, type: 3}
-  - {fileID: 21300000, guid: 2ad97cac0dfb1ab40a3f6b9842056a7b, type: 3}
-  - {fileID: 21300000, guid: 01cecee79e85abd4baf4189217b0ffc0, type: 3}
-  toppingSprites:
-  - {fileID: 21300000, guid: d2f058fb479f4674da8a5eedde90ea80, type: 3}
-  - {fileID: 21300000, guid: 27512283476731e46b21f2d2d83472e1, type: 3}
-  - {fileID: 21300000, guid: e8af6e85ce5e2a14e99fad90e416ce8d, type: 3}
-  - {fileID: 21300000, guid: 2ce639c9d04e4e040a13d93dcc6787cd, type: 3}
 --- !u!114 &217811544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -885,7 +858,7 @@ Transform:
   m_GameObject: {fileID: 217811542}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.46, y: -3.298871, z: -4.15334}
+  m_LocalPosition: {x: -0.46, y: -3.298871, z: -4.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1377,7 +1350,7 @@ Transform:
   m_GameObject: {fileID: 760441843}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.27, z: -0.05}
+  m_LocalPosition: {x: 0, y: -0.27, z: -0.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1482,6 +1455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 689814895}
+  displayDrink: {fileID: 1393107929}
 --- !u!61 &770891221
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1723,6 +1697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 689814895}
+  displayDrink: {fileID: 1393107929}
 --- !u!1 &804953922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,6 +1885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 689814895}
+  displayDrink: {fileID: 1393107929}
 --- !u!61 &811271730
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2183,6 +2159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 689814895}
+  displayDrink: {fileID: 1393107929}
 --- !u!1 &1011468527
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,6 +2478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 689814895}
+  displayDrink: {fileID: 1393107929}
 --- !u!61 &1103374242
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2641,7 +2619,6 @@ GameObject:
   - component: {fileID: 1142337548}
   - component: {fileID: 1142337549}
   - component: {fileID: 1142337550}
-  - component: {fileID: 1142337551}
   m_Layer: 0
   m_Name: Qpc2
   m_TagString: Untagged
@@ -2658,7 +2635,7 @@ Transform:
   m_GameObject: {fileID: 1142337546}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.77, y: -3.298871, z: -4.15334}
+  m_LocalPosition: {x: 5.77, y: -3.298871, z: -4.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2728,33 +2705,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customerIndex: 1
   playerInput: {fileID: 689814895}
---- !u!114 &1142337551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142337546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 507ab51699c9b9243be9a973da7985ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flavorSprites:
-  - {fileID: 21300000, guid: 7b3fc6422c43f2a448389ad4e16ece38, type: 3}
-  - {fileID: 21300000, guid: 8caf870ec5637c9488e17fa4868498b6, type: 3}
-  - {fileID: 21300000, guid: 242660f8a1e91ad47be930b4b6211fc8, type: 3}
-  - {fileID: 21300000, guid: ca5468de48cb5bb4396a90220869b970, type: 3}
-  sugarSprites:
-  - {fileID: 21300000, guid: 8c701374cf3fbef49be75466e4c88f36, type: 3}
-  - {fileID: 21300000, guid: 23382677b1b1a5849b57f45d910959cb, type: 3}
-  - {fileID: 21300000, guid: 2ad97cac0dfb1ab40a3f6b9842056a7b, type: 3}
-  - {fileID: 21300000, guid: 01cecee79e85abd4baf4189217b0ffc0, type: 3}
-  toppingSprites:
-  - {fileID: 21300000, guid: d2f058fb479f4674da8a5eedde90ea80, type: 3}
-  - {fileID: 21300000, guid: 27512283476731e46b21f2d2d83472e1, type: 3}
-  - {fileID: 21300000, guid: e8af6e85ce5e2a14e99fad90e416ce8d, type: 3}
-  - {fileID: 21300000, guid: 2ce639c9d04e4e040a13d93dcc6787cd, type: 3}
 --- !u!1 &1161041400
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,7 +2731,7 @@ Transform:
   m_GameObject: {fileID: 1161041400}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3407,7 +3357,7 @@ Transform:
   m_GameObject: {fileID: 1345361900}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.38, y: 0.37, z: 0}
+  m_LocalPosition: {x: 0.38, y: 0.37, z: -0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3576,7 +3526,7 @@ Transform:
   m_GameObject: {fileID: 1393107926}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.85, y: -4.24, z: -0.46}
+  m_LocalPosition: {x: 8.85, y: -4.24, z: -0.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3900,6 +3850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 689814895}
+  displayDrink: {fileID: 1393107929}
 --- !u!1 &1466543294
 GameObject:
   m_ObjectHideFlags: 0
@@ -4392,7 +4343,6 @@ GameObject:
   - component: {fileID: 1564802590}
   - component: {fileID: 1564802589}
   - component: {fileID: 1564802588}
-  - component: {fileID: 1564802587}
   m_Layer: 0
   m_Name: Qpc1
   m_TagString: Untagged
@@ -4400,33 +4350,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1564802587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564802586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 507ab51699c9b9243be9a973da7985ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flavorSprites:
-  - {fileID: 21300000, guid: 7b3fc6422c43f2a448389ad4e16ece38, type: 3}
-  - {fileID: 21300000, guid: 8caf870ec5637c9488e17fa4868498b6, type: 3}
-  - {fileID: 21300000, guid: 242660f8a1e91ad47be930b4b6211fc8, type: 3}
-  - {fileID: 21300000, guid: ca5468de48cb5bb4396a90220869b970, type: 3}
-  sugarSprites:
-  - {fileID: 21300000, guid: 8c701374cf3fbef49be75466e4c88f36, type: 3}
-  - {fileID: 21300000, guid: 23382677b1b1a5849b57f45d910959cb, type: 3}
-  - {fileID: 21300000, guid: 2ad97cac0dfb1ab40a3f6b9842056a7b, type: 3}
-  - {fileID: 21300000, guid: 01cecee79e85abd4baf4189217b0ffc0, type: 3}
-  toppingSprites:
-  - {fileID: 21300000, guid: d2f058fb479f4674da8a5eedde90ea80, type: 3}
-  - {fileID: 21300000, guid: 27512283476731e46b21f2d2d83472e1, type: 3}
-  - {fileID: 21300000, guid: e8af6e85ce5e2a14e99fad90e416ce8d, type: 3}
-  - {fileID: 21300000, guid: 2ce639c9d04e4e040a13d93dcc6787cd, type: 3}
 --- !u!114 &1564802588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4495,7 +4418,7 @@ Transform:
   m_GameObject: {fileID: 1564802586}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.64, y: -3.298871, z: -4.15334}
+  m_LocalPosition: {x: -6.64, y: -3.298871, z: -4.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4783,6 +4706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 689814895}
+  displayDrink: {fileID: 1393107929}
 --- !u!61 &1787368451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5139,8 +5063,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.8
-  far clip plane: 0.9
+  near clip plane: 0.3
+  far clip plane: 1000
   field of view: 60
   orthographic: 1
   orthographic size: 5.3

@@ -15,10 +15,16 @@ public class AppearingLooking : MonoBehaviour
     //not looking by default
     public bool looking = false;
 
+    public PlayerInput a;
 
     private void Start()
     {
         StartCoroutine(PlayWalkingInAnimation());
+        if (gapNumber == 2)
+        {
+            gapNumber = 3;
+        }
+        a = FindObjectOfType<PlayerInput>();
     }
 
     private void Update()
@@ -40,9 +46,7 @@ public class AppearingLooking : MonoBehaviour
         if(looking == true)
         {
             StartCoroutine(PlayTurningAnimation());
-            //wait also how do you access the sus bar
-            //if statement that says if the player's position is at the gap generated then the sus bar goes up
-            //also how do you make it so that the looking animation is at the same time as that happening?
+            StartCoroutine(Looking());
             looking = false;
         }
 
@@ -69,7 +73,10 @@ public class AppearingLooking : MonoBehaviour
     IEnumerator Looking()
     {
         float lookTime = Random.Range(2.0f, 6.0f);
-        //how do i get it so that the looking animation is at the same time as sus bar going up?
+        if(gapNumber == a.currentStation)
+        {
+            //thing that makes sus up
+        }
         yield return new WaitForSeconds(lookTime);
         Debug.Log("looking animation");
     }

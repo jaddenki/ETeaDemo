@@ -6,11 +6,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using TMPro;
 
 public class PlayerInput : MonoBehaviour
 {
     public int currentStation = 0;
-
+    public int moneyCount = 0;
+    public TextMeshProUGUI moolah;
     // placeholder selection options
     public enum Flavor { Taro, Matcha, FruitTea, Thai}
     public enum SugarLevel { ZeroPercent, TwentyFivePercent, FiftyPercent, OneHundredPercent }
@@ -79,6 +81,7 @@ public class PlayerInput : MonoBehaviour
 
         displayDrink.LetGo();
         canClickQPC(false);
+        moolah.text = moneyCount.ToString();
     }
 
 
@@ -184,10 +187,7 @@ public class PlayerInput : MonoBehaviour
         try
         {
             Debug.Log("Now serving customer: " + customerIndex);
-            if(customerIndex == 0)
-            {
-                customerIndex = 3;
-            }
+
             Order currentOrder = orderQueue.ordersQueue[customerIndex - 1];
 
             Debug.Log("current order " + currentOrder.ToString());
@@ -205,10 +205,14 @@ public class PlayerInput : MonoBehaviour
                     Debug.Log("Order served. Remaining Orders: " + orderQueue.ordersQueue.Count);
                     removeQPC(customerIndex - 1);
                     displayDrink.LetGo();
+                    moneyCount += 6;
+                    moolah.text = moneyCount.ToString();
                 }
                 else
                 {
                     Debug.Log("WRONGGGGGG.");
+                    moneyCount -= 2;
+                    moolah.text = moneyCount.ToString();                    
                 }
             }
             else

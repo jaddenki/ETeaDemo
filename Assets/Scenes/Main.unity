@@ -992,7 +992,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e668c584cbab84e90bfae9e8d09d5696, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 94f2cc2e7528641ca9e37c39a12f90fe, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1463,6 +1463,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentStation: 0
+  moneyCount: 0
+  moolah: {fileID: 2103940373}
   selectedFlavor: 0
   selectedSugar: 0
   selectedTopping: 0
@@ -1663,7 +1665,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.27, z: -0.06}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1393107927}

@@ -6,7 +6,7 @@ public class CustomerSelection : MonoBehaviour
 
     private void OnMouseDown()
     {
-        int lol = customerIndex % 3 - 1;
+        int lol = (customerIndex % 3);
         playerInput.ServeOrder(lol);
     } 
 }

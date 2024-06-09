@@ -184,7 +184,10 @@ public class PlayerInput : MonoBehaviour
         try
         {
             Debug.Log("Now serving customer: " + customerIndex);
-
+            if(customerIndex == 0)
+            {
+                customerIndex = 3;
+            }
             Order currentOrder = orderQueue.ordersQueue[customerIndex - 1];
 
             Debug.Log("current order " + currentOrder.ToString());

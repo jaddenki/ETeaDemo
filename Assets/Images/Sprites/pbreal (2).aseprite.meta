@@ -1,0 +1,2939 @@
+fileFormatVersion: 2
+guid: 35cd69f88475e11439d5bbdbce2d5645
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: pbreal (2)_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 788
+      y: 2410
+      width: 384
+      height: 216
+    spriteID: aee70a234a63c0141b3426831029c379
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 788, y: 2410}
+  - name: pbreal (2)_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1180
+      y: 2410
+      width: 384
+      height: 216
+    spriteID: 1d46b88a805eab04a95230890d697669
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1180, y: 2410}
+  - name: pbreal (2)_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.21454546}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2367
+      y: 4
+      width: 384
+      height: 275
+    spriteID: f98eaa2d42140f647b806215358e1147
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2367, y: 4}
+  - name: pbreal (2)_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.08085106}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1572
+      y: 1929
+      width: 384
+      height: 235
+    spriteID: 9e5fdf39f2a8a26489103450ff2027eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1572, y: 1929}
+  - name: pbreal (2)_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.08474576}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3553
+      y: 1678
+      width: 384
+      height: 236
+    spriteID: eac29b717b1e4384483133c5e0aee53a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3553, y: 1678}
+  - name: pbreal (2)_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1572
+      y: 2410
+      width: 384
+      height: 216
+    spriteID: 4c0db8ba3d78ce5438c2b0c10d663734
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1572, y: 2410}
+  - name: pbreal (2)_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.05263158}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1964
+      y: 2173
+      width: 384
+      height: 228
+    spriteID: 6296335051ec2fc419827dd666011c7f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1964, y: 2173}
+  - name: pbreal (2)_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.05263158}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2356
+      y: 2173
+      width: 384
+      height: 228
+    spriteID: 4a4984419fee3d24b913d89f8454958a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2356, y: 2173}
+  - name: pbreal (2)_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1964
+      y: 2410
+      width: 384
+      height: 216
+    spriteID: c79a93accfb7f5c47b5f2b0dac7b337f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1964, y: 2410}
+  - name: pbreal (2)_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.19702603}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3543
+      y: 4
+      width: 384
+      height: 269
+    spriteID: 705cdfe81d154de47af8efc6deffc3b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3543, y: 4}
+  - name: pbreal (2)_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.13944224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3140
+      y: 904
+      width: 384
+      height: 251
+    spriteID: 3df628d74fee1c34f820564586e3de9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3140, y: 904}
+  - name: pbreal (2)_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.056768563}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2173
+      width: 384
+      height: 229
+    spriteID: 1a556cf745d8a3c4c86dfc96396e5e25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2173}
+  - name: pbreal (2)_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.056768563}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 2173
+      width: 384
+      height: 229
+    spriteID: ef540e1be739adc49ada86d58ea990e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 2173}
+  - name: pbreal (2)_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.056768563}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 788
+      y: 2173
+      width: 384
+      height: 229
+    spriteID: 94894e86533743f4e9b4485247a7a6f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 788, y: 2173}
+  - name: pbreal (2)_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.056768563}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1180
+      y: 2173
+      width: 384
+      height: 229
+    spriteID: 15b721cdd3be97f46855fc3809fd87ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1180, y: 2173}
+  - name: pbreal (2)_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.056768563}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1572
+      y: 2173
+      width: 384
+      height: 229
+    spriteID: 03c30c39b3eab1947ace1667144f256c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1572, y: 2173}
+  - name: pbreal (2)_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.21454546}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2759
+      y: 4
+      width: 384
+      height: 275
+    spriteID: 9fc116e6097512744a01ea53351880fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2759, y: 4}
+  - name: pbreal (2)_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.17557253}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 788
+      y: 631
+      width: 384
+      height: 262
+    spriteID: 0872612bc76e21949b42fc379110556b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 788, y: 631}
+  - name: pbreal (2)_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.18490566}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 631
+      width: 384
+      height: 265
+    spriteID: 39dd0b62d1ed34d41abd3c230660513e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 631}
+  - name: pbreal (2)_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.16602316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1572
+      y: 631
+      width: 384
+      height: 259
+    spriteID: c1510cab2b299b546888d393323fa334
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1572, y: 631}
+  - name: pbreal (2)_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.14285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2748
+      y: 904
+      width: 384
+      height: 252
+    spriteID: 860dab88833454b49aaa98f884600b4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2748, y: 904}
+  - name: pbreal (2)_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.15294118}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3532
+      y: 631
+      width: 384
+      height: 255
+    spriteID: d3b1575272c225a4c8821ee8d7351fb2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3532, y: 631}
+  - name: pbreal (2)_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.15294118}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 904
+      width: 384
+      height: 255
+    spriteID: 1ec943fb6e986d04da75b13e5aa67031
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 904}
+  - name: pbreal (2)_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.15294118}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 904
+      width: 384
+      height: 255
+    spriteID: 3025b09924b10b949b5269ade4131d30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 904}
+  - name: pbreal (2)_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.15294118}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 788
+      y: 904
+      width: 384
+      height: 255
+    spriteID: f85599d7863d62b4390e0348cacd9462
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 788, y: 904}
+  - name: pbreal (2)_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.15294118}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1180
+      y: 904
+      width: 384
+      height: 255
+    spriteID: 49e807513dc0d3949b362ef3fb4c1b62
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1180, y: 904}
+  - name: pbreal (2)_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.08474576}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1929
+      width: 384
+      height: 236
+    spriteID: 977594ba003ebf74a96209f7189cbfac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1929}
+  - name: pbreal (2)_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.08474576}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 1929
+      width: 384
+      height: 236
+    spriteID: 0ce7b994d376fbb48bad58e0d93f94ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 1929}
+  - name: pbreal (2)_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.08474576}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 788
+      y: 1929
+      width: 384
+      height: 236
+    spriteID: 016d3e40f03a18b47a4dcf7faa9bf950
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 788, y: 1929}
+  - name: pbreal (2)_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.08474576}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1180
+      y: 1929
+      width: 384
+      height: 236
+    spriteID: f9f2c774e4d6a014bbf2cece2802b4f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1180, y: 1929}
+  - name: pbreal (2)_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.15294118}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1572
+      y: 904
+      width: 384
+      height: 255
+    spriteID: d2d313c398c09f848b4f4f7c96af162b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1572, y: 904}
+  - name: pbreal (2)_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.16923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1180
+      y: 631
+      width: 384
+      height: 260
+    spriteID: f568a98107dd4d445a99f5a2798d50e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1180, y: 631}
+  - name: pbreal (2)_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.12550607}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1964
+      y: 1167
+      width: 384
+      height: 247
+    spriteID: b5fd4b273b16b3744bea99cc21b86edb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1964, y: 1167}
+  - name: pbreal (2)_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.14624506}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1964
+      y: 904
+      width: 384
+      height: 253
+    spriteID: b798d649d71a70f48a2d6f62520058a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1964, y: 904}
+  - name: pbreal (2)_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.12195122}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 1423
+      width: 384
+      height: 246
+    spriteID: 8647f7ac215705b4a8cbb5c1733083d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 1423}
+  - name: pbreal (2)_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.13599999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3532
+      y: 904
+      width: 384
+      height: 250
+    spriteID: e4e6f2f348a2d5a418514440004adff1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3532, y: 904}
+  - name: pbreal (2)_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.114754096}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1572
+      y: 1423
+      width: 384
+      height: 244
+    spriteID: dc3512cc0c5be604ab593ae9e0c0f7aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1572, y: 1423}
+  - name: pbreal (2)_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.114754096}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1964
+      y: 1423
+      width: 384
+      height: 244
+    spriteID: 2ead93eef6b85024f8d3e14133c6716e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1964, y: 1423}
+  - name: pbreal (2)_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: 0.114754096}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2356
+      y: 1423
+      width: 384
+      height: 244
+    spriteID: a93d124e130fd804a82de982a10f3e01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2356, y: 1423}
+  - name: pbreal (2)_Frame_40
+    originalName: 
+    pivot: {x: 0.5, y: 0.114754096}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2748
+      y: 1423
+      width: 384
+      height: 244
+    spriteID: 611bd3069957d5d44a22768a62cf4d2f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2748, y: 1423}
+  - name: pbreal (2)_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.114754096}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3140
+      y: 1423
+      width: 384
+      height: 244
+    spriteID: 5c2fd1d15f0e0fc4baf038dc9ca860ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3140, y: 1423}
+  - name: pbreal (2)_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2748
+      y: 2173
+      width: 384
+      height: 225
+    spriteID: 4ceeca36124d72e4bac921b474980eda
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2748, y: 2173}
+  - name: pbreal (2)_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3140
+      y: 2173
+      width: 384
+      height: 225
+    spriteID: a6336bd47d83d6c44bd3f108c6814e31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3140, y: 2173}
+  - name: pbreal (2)_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3532
+      y: 2173
+      width: 384
+      height: 225
+    spriteID: 64b47cfc53a60664fa80ea20f71162e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3532, y: 2173}
+  - name: pbreal (2)_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2410
+      width: 384
+      height: 225
+    spriteID: 8e6d14e9e64966446972812f12aba595
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2410}
+  - name: pbreal (2)_Frame_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.04}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 2410
+      width: 384
+      height: 225
+    spriteID: f44375a3f7c6bae4b9c3a005704718bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 2410}
+  - name: pbreal (2)_Frame_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.114754096}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3532
+      y: 1423
+      width: 384
+      height: 244
+    spriteID: d925d78ffb8fd6b498054df9d6756a10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3532, y: 1423}
+  - name: pbreal (2)_Frame_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1180
+      y: 1678
+      width: 384
+      height: 240
+    spriteID: cb3a207248b982b4d9cee6bc0789e71a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1180, y: 1678}
+  - name: pbreal (2)_Frame_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.11111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1678
+      width: 384
+      height: 243
+    spriteID: e5ad27b02d2068b489c26eb35465c106
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1678}
+  - name: pbreal (2)_Frame_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.08085106}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1964
+      y: 1929
+      width: 384
+      height: 235
+    spriteID: 1f9bb555e422b3e46a16f971cefc52f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1964, y: 1929}
+  - name: pbreal (2)_Frame_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1572
+      y: 1678
+      width: 384
+      height: 240
+    spriteID: 4c2c4084184f13f458e4cb198ff6b68f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1572, y: 1678}
+  - name: pbreal (2)_Frame_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2356
+      y: 1929
+      width: 384
+      height: 234
+    spriteID: 89cc766b4712eb04589c79a160d12a84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2356, y: 1929}
+  - name: pbreal (2)_Frame_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2748
+      y: 1929
+      width: 384
+      height: 234
+    spriteID: dcf0f8068c0b59d48b7bd31e5e8d6be2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2748, y: 1929}
+  - name: pbreal (2)_Frame_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3140
+      y: 1929
+      width: 384
+      height: 234
+    spriteID: 2150808db50f52449af6fa6e81ff6870
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3140, y: 1929}
+  - name: pbreal (2)_Frame_55
+    originalName: 
+    pivot: {x: 0.4910486, y: 0.06896552}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2356
+      y: 1678
+      width: 391
+      height: 232
+    spriteID: 4f1148aa7c0ce034494b468b1728c693
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2356, y: 1678}
+  - name: pbreal (2)_Frame_56
+    originalName: 
+    pivot: {x: 0.4910486, y: 0.06896552}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2755
+      y: 1678
+      width: 391
+      height: 232
+    spriteID: dfd5e50395179c941bc53406bb356552
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2755, y: 1678}
+  - name: pbreal (2)_Frame_57
+    originalName: 
+    pivot: {x: 0.4910486, y: 0.06896552}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3154
+      y: 1678
+      width: 391
+      height: 232
+    spriteID: 2f792323446b5e148837ee472efd9ed8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3154, y: 1678}
+  - name: pbreal (2)_Frame_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.088607594}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1964
+      y: 1678
+      width: 384
+      height: 237
+    spriteID: 9a39ff131f89a2d4caac5b9b52c70fd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1964, y: 1678}
+  - name: pbreal (2)_Frame_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.11111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 1678
+      width: 384
+      height: 243
+    spriteID: de51881cb8f43d84bab3b49704e032c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 1678}
+  - name: pbreal (2)_Frame_61
+    originalName: 
+    pivot: {x: 0.5, y: 0.10743802}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 788
+      y: 1678
+      width: 384
+      height: 242
+    spriteID: 61e39ecb6f89c434ca6ca3b07d4d9326
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 788, y: 1678}
+  - name: pbreal (2)_Frame_62
+    originalName: 
+    pivot: {x: 0.5, y: 0.12195122}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 788
+      y: 1423
+      width: 384
+      height: 246
+    spriteID: fd348c9e4b1b67c49971efe78494cc2b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 788, y: 1423}
+  - name: pbreal (2)_Frame_63
+    originalName: 
+    pivot: {x: 0.5, y: 0.12195122}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1180
+      y: 1423
+      width: 384
+      height: 246
+    spriteID: aabf03a4deb338848bf9b0dd90a27e51
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1180, y: 1423}
+  - name: pbreal (2)_Frame_64
+    originalName: 
+    pivot: {x: 0.5, y: 0.12550607}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2356
+      y: 1167
+      width: 384
+      height: 247
+    spriteID: 040e86db7e851a5488856e3caf485fd6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2356, y: 1167}
+  - name: pbreal (2)_Frame_65
+    originalName: 
+    pivot: {x: 0.5, y: 0.12550607}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2748
+      y: 1167
+      width: 384
+      height: 247
+    spriteID: 5d617ae39b3c9074793ae73a6c19899e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2748, y: 1167}
+  - name: pbreal (2)_Frame_66
+    originalName: 
+    pivot: {x: 0.5, y: 0.12550607}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3140
+      y: 1167
+      width: 384
+      height: 247
+    spriteID: af43a0ff3eaeb0f4e85a98cd903557cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3140, y: 1167}
+  - name: pbreal (2)_Frame_67
+    originalName: 
+    pivot: {x: 0.5, y: 0.12550607}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3532
+      y: 1167
+      width: 384
+      height: 247
+    spriteID: 9892c830248f2d244966d2be3da7c635
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3532, y: 1167}
+  - name: pbreal (2)_Frame_68
+    originalName: 
+    pivot: {x: 0.5, y: 0.12550607}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1423
+      width: 384
+      height: 247
+    spriteID: 220e09af018dae248898e40e617f7daf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1423}
+  - name: pbreal (2)_Frame_69
+    originalName: 
+    pivot: {x: 0.5, y: 0.12903225}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1167
+      width: 384
+      height: 248
+    spriteID: 2916a570842bed44590ba634193f86cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1167}
+  - name: pbreal (2)_Frame_70
+    originalName: 
+    pivot: {x: 0.5, y: 0.12903225}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 1167
+      width: 384
+      height: 248
+    spriteID: ad28c16ed023c2a42a0a5f68bc70a02a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 1167}
+  - name: pbreal (2)_Frame_71
+    originalName: 
+    pivot: {x: 0.5, y: 0.12903225}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 788
+      y: 1167
+      width: 384
+      height: 248
+    spriteID: 8e208501e8e3668459e53b17c3c18c56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 788, y: 1167}
+  - name: pbreal (2)_Frame_72
+    originalName: 
+    pivot: {x: 0.5, y: 0.12903225}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1180
+      y: 1167
+      width: 384
+      height: 248
+    spriteID: 78c30025fd717cd4da16bd7122a2bdf5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1180, y: 1167}
+  - name: pbreal (2)_Frame_73
+    originalName: 
+    pivot: {x: 0.5, y: 0.12903225}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1572
+      y: 1167
+      width: 384
+      height: 248
+    spriteID: 4daf861267873184e9a9384e99e3f67a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1572, y: 1167}
+  - name: pbreal (2)_Frame_74
+    originalName: 
+    pivot: {x: 0.5, y: 0.14624506}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2356
+      y: 904
+      width: 384
+      height: 253
+    spriteID: 6ac51ad778b93774aa3cb476704a949b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2356, y: 904}
+  - name: pbreal (2)_Frame_75
+    originalName: 
+    pivot: {x: 0.5, y: 0.15625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2748
+      y: 631
+      width: 384
+      height: 256
+    spriteID: 1f6ecb674467d7b4b819f99c55f5bb09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2748, y: 631}
+  - name: pbreal (2)_Frame_76
+    originalName: 
+    pivot: {x: 0.5, y: 0.16602316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1964
+      y: 631
+      width: 384
+      height: 259
+    spriteID: b21cd265cb853de4e8041d61b1df39e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1964, y: 631}
+  - name: pbreal (2)_Frame_77
+    originalName: 
+    pivot: {x: 0.5, y: 0.16602316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2356
+      y: 631
+      width: 384
+      height: 259
+    spriteID: f91006ff7ea789b40adb1291ebd44bc4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2356, y: 631}
+  - name: pbreal (2)_Frame_78
+    originalName: 
+    pivot: {x: 0.5, y: 0.18490566}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 631
+      width: 384
+      height: 265
+    spriteID: 2d566dc19fc9e2c4fa73e6cd1928e18b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 631}
+  - name: pbreal (2)_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.15625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3140
+      y: 631
+      width: 384
+      height: 256
+    spriteID: 5a5d8c441ea22fc498361f204a2ab0bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3140, y: 631}
+  - name: pbreal (2)_Frame_79
+    originalName: 
+    pivot: {x: 0.5, y: 0.18796992}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 357
+      width: 384
+      height: 266
+    spriteID: ee7f00cb2da92cd46a56b2e3522f306c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 357}
+  - name: pbreal (2)_Frame_80
+    originalName: 
+    pivot: {x: 0.5, y: 0.18796992}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 357
+      width: 384
+      height: 266
+    spriteID: e0074fc7645bba041bbb13114e3ce1a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 357}
+  - name: pbreal (2)_Frame_81
+    originalName: 
+    pivot: {x: 0.5, y: 0.18796992}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 788
+      y: 357
+      width: 384
+      height: 266
+    spriteID: 818af12d0c7d4f54c9edb834f2025b85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 788, y: 357}
+  - name: pbreal (2)_Frame_82
+    originalName: 
+    pivot: {x: 0.5, y: 0.18796992}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1180
+      y: 357
+      width: 384
+      height: 266
+    spriteID: 5a4c575a2a3929c49a71a60454d88dd2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1180, y: 357}
+  - name: pbreal (2)_Frame_83
+    originalName: 
+    pivot: {x: 0.5, y: 0.18796992}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1572
+      y: 357
+      width: 384
+      height: 266
+    spriteID: 5c752064be8498947bc8cc613d50af5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1572, y: 357}
+  - name: pbreal (2)_Frame_84
+    originalName: 
+    pivot: {x: 0.5, y: 0.18796992}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1964
+      y: 357
+      width: 384
+      height: 266
+    spriteID: 8c25353f89656994a92968ff2988a985
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1964, y: 357}
+  - name: pbreal (2)_Frame_85
+    originalName: 
+    pivot: {x: 0.5, y: 0.18796992}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2356
+      y: 357
+      width: 384
+      height: 266
+    spriteID: 2b76608145a49c44298f2800ab450ade
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2356, y: 357}
+  - name: pbreal (2)_Frame_86
+    originalName: 
+    pivot: {x: 0.5, y: 0.18796992}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2748
+      y: 357
+      width: 384
+      height: 266
+    spriteID: 214891bcc45f7654d85927b012b9ad0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2748, y: 357}
+  - name: pbreal (2)_Frame_87
+    originalName: 
+    pivot: {x: 0.5, y: 0.18796992}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3140
+      y: 357
+      width: 384
+      height: 266
+    spriteID: d7667fe88643a16459df3d6e60cb6638
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3140, y: 357}
+  - name: pbreal (2)_Frame_88
+    originalName: 
+    pivot: {x: 0.5, y: 0.18796992}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3532
+      y: 357
+      width: 384
+      height: 266
+    spriteID: a6db47be1d67f9f47a0b532be7affcbb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3532, y: 357}
+  - name: pbreal (2)_Frame_89
+    originalName: 
+    pivot: {x: 0.5, y: 0.20879121}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3151
+      y: 4
+      width: 384
+      height: 273
+    spriteID: 56786c6bdf7dda84e9f7e9484b857463
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3151, y: 4}
+  - name: pbreal (2)_Frame_90
+    originalName: 
+    pivot: {x: 0.5, y: 0.22857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1975
+      y: 4
+      width: 384
+      height: 280
+    spriteID: 37951e207502e9c4eb76ba0d873ae737
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1975, y: 4}
+  - name: pbreal (2)_Frame_91
+    originalName: 
+    pivot: {x: 0.5, y: 0.2551724}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1583
+      y: 4
+      width: 384
+      height: 290
+    spriteID: 48b74407b43318c47a99a24234643402
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1583, y: 4}
+  - name: pbreal (2)_Frame_92
+    originalName: 
+    pivot: {x: 0.5, y: 0.27272728}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1191
+      y: 4
+      width: 384
+      height: 297
+    spriteID: f985c6353c8677c45a780e89bdd978af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1191, y: 4}
+  - name: pbreal (2)_Frame_93
+    originalName: 
+    pivot: {x: 0.5, y: 0.3271028}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 407
+      y: 4
+      width: 384
+      height: 321
+    spriteID: b9e00e11fa10dd1419813ab1db95296f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 407, y: 4}
+  - name: pbreal (2)_Frame_94
+    originalName: 
+    pivot: {x: 0.5, y: 0.3271028}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 799
+      y: 4
+      width: 384
+      height: 321
+    spriteID: 86e193d3ace491c42bd506e82fec367d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 799, y: 4}
+  - name: pbreal (2)_Frame_95
+    originalName: 
+    pivot: {x: 0.513924, y: 0.37391302}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 395
+      height: 345
+    spriteID: 0d69c56205421a5469d63c0a7870596d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: pbreal (2)_Frame_96
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2356
+      y: 2410
+      width: 384
+      height: 216
+    spriteID: a3a61336325f8ab4fae5c647e487d7c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2356, y: 2410}
+  - name: pbreal (2)_Frame_97
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2748
+      y: 2410
+      width: 384
+      height: 216
+    spriteID: 4d4ad48bc551f7446ad7ef107e85e0ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 2748, y: 2410}
+  - name: pbreal (2)_Frame_98
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3140
+      y: 2410
+      width: 384
+      height: 216
+    spriteID: 9eee12449e3c32344971224c35ec76db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3140, y: 2410}
+  - name: pbreal (2)_Frame_99
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3532
+      y: 2410
+      width: 384
+      height: 216
+    spriteID: c619d85279762f64abd6a3150c6f8db2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3532, y: 2410}
+  - name: pbreal (2)_Frame_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.07359307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3532
+      y: 1929
+      width: 384
+      height: 231
+    spriteID: b576f0961986c884e8a3535a490d5fc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 3532, y: 1929}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -859134637
+    name: pbreal (2)
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: pbreal (2)_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 384
+        height: 216
+      spriteId: aee70a234a63c0141b3426831029c379
+    - name: pbreal (2)_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 0
+        width: 384
+        height: 216
+      spriteId: 1d46b88a805eab04a95230890d697669
+    - name: pbreal (2)_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: -59
+        width: 384
+        height: 275
+      spriteId: f98eaa2d42140f647b806215358e1147
+    - name: pbreal (2)_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: -19
+        width: 384
+        height: 235
+      spriteId: 9e5fdf39f2a8a26489103450ff2027eb
+    - name: pbreal (2)_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: -20
+        width: 384
+        height: 236
+      spriteId: eac29b717b1e4384483133c5e0aee53a
+    - name: pbreal (2)_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 0
+        width: 384
+        height: 216
+      spriteId: 4c0db8ba3d78ce5438c2b0c10d663734
+    - name: pbreal (2)_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: -12
+        width: 384
+        height: 228
+      spriteId: 6296335051ec2fc419827dd666011c7f
+    - name: pbreal (2)_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: -12
+        width: 384
+        height: 228
+      spriteId: 4a4984419fee3d24b913d89f8454958a
+    - name: pbreal (2)_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 0
+        width: 384
+        height: 216
+      spriteId: c79a93accfb7f5c47b5f2b0dac7b337f
+    - name: pbreal (2)_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: -53
+        width: 384
+        height: 269
+      spriteId: 705cdfe81d154de47af8efc6deffc3b2
+    - name: pbreal (2)_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: -35
+        width: 384
+        height: 251
+      spriteId: 3df628d74fee1c34f820564586e3de9a
+    - name: pbreal (2)_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: -13
+        width: 384
+        height: 229
+      spriteId: 1a556cf745d8a3c4c86dfc96396e5e25
+    - name: pbreal (2)_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: -13
+        width: 384
+        height: 229
+      spriteId: ef540e1be739adc49ada86d58ea990e4
+    - name: pbreal (2)_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 0
+        y: -13
+        width: 384
+        height: 229
+      spriteId: 94894e86533743f4e9b4485247a7a6f4
+    - name: pbreal (2)_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 0
+        y: -13
+        width: 384
+        height: 229
+      spriteId: 15b721cdd3be97f46855fc3809fd87ec
+    - name: pbreal (2)_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 0
+        y: -13
+        width: 384
+        height: 229
+      spriteId: 03c30c39b3eab1947ace1667144f256c
+    - name: pbreal (2)_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 0
+        y: -59
+        width: 384
+        height: 275
+      spriteId: 9fc116e6097512744a01ea53351880fa
+    - name: pbreal (2)_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 0
+        y: -46
+        width: 384
+        height: 262
+      spriteId: 0872612bc76e21949b42fc379110556b
+    - name: pbreal (2)_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 0
+        y: -49
+        width: 384
+        height: 265
+      spriteId: 39dd0b62d1ed34d41abd3c230660513e
+    - name: pbreal (2)_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 0
+        y: -43
+        width: 384
+        height: 259
+      spriteId: c1510cab2b299b546888d393323fa334
+    - name: pbreal (2)_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 0
+        y: -36
+        width: 384
+        height: 252
+      spriteId: 860dab88833454b49aaa98f884600b4b
+    - name: pbreal (2)_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 0
+        y: -39
+        width: 384
+        height: 255
+      spriteId: d3b1575272c225a4c8821ee8d7351fb2
+    - name: pbreal (2)_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 0
+        y: -39
+        width: 384
+        height: 255
+      spriteId: 1ec943fb6e986d04da75b13e5aa67031
+    - name: pbreal (2)_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 0
+        y: -39
+        width: 384
+        height: 255
+      spriteId: 3025b09924b10b949b5269ade4131d30
+    - name: pbreal (2)_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 0
+        y: -39
+        width: 384
+        height: 255
+      spriteId: f85599d7863d62b4390e0348cacd9462
+    - name: pbreal (2)_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 0
+        y: -39
+        width: 384
+        height: 255
+      spriteId: 49e807513dc0d3949b362ef3fb4c1b62
+    - name: pbreal (2)_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 0
+        y: -20
+        width: 384
+        height: 236
+      spriteId: 977594ba003ebf74a96209f7189cbfac
+    - name: pbreal (2)_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 0
+        y: -20
+        width: 384
+        height: 236
+      spriteId: 0ce7b994d376fbb48bad58e0d93f94ed
+    - name: pbreal (2)_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 0
+        y: -20
+        width: 384
+        height: 236
+      spriteId: 016d3e40f03a18b47a4dcf7faa9bf950
+    - name: pbreal (2)_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 0
+        y: -20
+        width: 384
+        height: 236
+      spriteId: f9f2c774e4d6a014bbf2cece2802b4f4
+    - name: pbreal (2)_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 0
+        y: -39
+        width: 384
+        height: 255
+      spriteId: d2d313c398c09f848b4f4f7c96af162b
+    - name: pbreal (2)_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 0
+        y: -44
+        width: 384
+        height: 260
+      spriteId: f568a98107dd4d445a99f5a2798d50e9
+    - name: pbreal (2)_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 0
+        y: -31
+        width: 384
+        height: 247
+      spriteId: b5fd4b273b16b3744bea99cc21b86edb
+    - name: pbreal (2)_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 0
+        y: -37
+        width: 384
+        height: 253
+      spriteId: b798d649d71a70f48a2d6f62520058a2
+    - name: pbreal (2)_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 0
+        y: -30
+        width: 384
+        height: 246
+      spriteId: 8647f7ac215705b4a8cbb5c1733083d6
+    - name: pbreal (2)_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 0
+        y: -34
+        width: 384
+        height: 250
+      spriteId: e4e6f2f348a2d5a418514440004adff1
+    - name: pbreal (2)_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 0
+        y: -28
+        width: 384
+        height: 244
+      spriteId: dc3512cc0c5be604ab593ae9e0c0f7aa
+    - name: pbreal (2)_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 0
+        y: -28
+        width: 384
+        height: 244
+      spriteId: 2ead93eef6b85024f8d3e14133c6716e
+    - name: pbreal (2)_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 0
+        y: -28
+        width: 384
+        height: 244
+      spriteId: a93d124e130fd804a82de982a10f3e01
+    - name: pbreal (2)_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 0
+        y: -28
+        width: 384
+        height: 244
+      spriteId: 611bd3069957d5d44a22768a62cf4d2f
+    - name: pbreal (2)_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 0
+        y: -28
+        width: 384
+        height: 244
+      spriteId: 5c2fd1d15f0e0fc4baf038dc9ca860ac
+    - name: pbreal (2)_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 0
+        y: -9
+        width: 384
+        height: 225
+      spriteId: 4ceeca36124d72e4bac921b474980eda
+    - name: pbreal (2)_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 0
+        y: -9
+        width: 384
+        height: 225
+      spriteId: a6336bd47d83d6c44bd3f108c6814e31
+    - name: pbreal (2)_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 0
+        y: -9
+        width: 384
+        height: 225
+      spriteId: 64b47cfc53a60664fa80ea20f71162e0
+    - name: pbreal (2)_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 0
+        y: -9
+        width: 384
+        height: 225
+      spriteId: 8e6d14e9e64966446972812f12aba595
+    - name: pbreal (2)_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 0
+        y: -9
+        width: 384
+        height: 225
+      spriteId: f44375a3f7c6bae4b9c3a005704718bb
+    - name: pbreal (2)_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 0
+        y: -28
+        width: 384
+        height: 244
+      spriteId: d925d78ffb8fd6b498054df9d6756a10
+    - name: pbreal (2)_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 0
+        y: -24
+        width: 384
+        height: 240
+      spriteId: cb3a207248b982b4d9cee6bc0789e71a
+    - name: pbreal (2)_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 0
+        y: -27
+        width: 384
+        height: 243
+      spriteId: e5ad27b02d2068b489c26eb35465c106
+    - name: pbreal (2)_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 0
+        y: -19
+        width: 384
+        height: 235
+      spriteId: 1f9bb555e422b3e46a16f971cefc52f8
+    - name: pbreal (2)_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 0
+        y: -24
+        width: 384
+        height: 240
+      spriteId: 4c2c4084184f13f458e4cb198ff6b68f
+    - name: pbreal (2)_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 0
+        y: -18
+        width: 384
+        height: 234
+      spriteId: 89cc766b4712eb04589c79a160d12a84
+    - name: pbreal (2)_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 0
+        y: -18
+        width: 384
+        height: 234
+      spriteId: dcf0f8068c0b59d48b7bd31e5e8d6be2
+    - name: pbreal (2)_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 0
+        y: -18
+        width: 384
+        height: 234
+      spriteId: 2150808db50f52449af6fa6e81ff6870
+    - name: pbreal (2)_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 0
+        y: -16
+        width: 391
+        height: 232
+      spriteId: 4f1148aa7c0ce034494b468b1728c693
+    - name: pbreal (2)_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 0
+        y: -16
+        width: 391
+        height: 232
+      spriteId: dfd5e50395179c941bc53406bb356552
+    - name: pbreal (2)_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 0
+        y: -16
+        width: 391
+        height: 232
+      spriteId: 2f792323446b5e148837ee472efd9ed8
+    - name: pbreal (2)_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 0
+        y: -21
+        width: 384
+        height: 237
+      spriteId: 9a39ff131f89a2d4caac5b9b52c70fd3
+    - name: pbreal (2)_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 0
+        y: -27
+        width: 384
+        height: 243
+      spriteId: de51881cb8f43d84bab3b49704e032c2
+    - name: pbreal (2)_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 0
+        y: -26
+        width: 384
+        height: 242
+      spriteId: 61e39ecb6f89c434ca6ca3b07d4d9326
+    - name: pbreal (2)_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 0
+        y: -30
+        width: 384
+        height: 246
+      spriteId: fd348c9e4b1b67c49971efe78494cc2b
+    - name: pbreal (2)_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 0
+        y: -30
+        width: 384
+        height: 246
+      spriteId: aabf03a4deb338848bf9b0dd90a27e51
+    - name: pbreal (2)_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 0
+        y: -31
+        width: 384
+        height: 247
+      spriteId: 040e86db7e851a5488856e3caf485fd6
+    - name: pbreal (2)_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 0
+        y: -31
+        width: 384
+        height: 247
+      spriteId: 5d617ae39b3c9074793ae73a6c19899e
+    - name: pbreal (2)_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 0
+        y: -31
+        width: 384
+        height: 247
+      spriteId: af43a0ff3eaeb0f4e85a98cd903557cd
+    - name: pbreal (2)_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 0
+        y: -31
+        width: 384
+        height: 247
+      spriteId: 9892c830248f2d244966d2be3da7c635
+    - name: pbreal (2)_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 0
+        y: -31
+        width: 384
+        height: 247
+      spriteId: 220e09af018dae248898e40e617f7daf
+    - name: pbreal (2)_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 0
+        y: -32
+        width: 384
+        height: 248
+      spriteId: 2916a570842bed44590ba634193f86cb
+    - name: pbreal (2)_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 0
+        y: -32
+        width: 384
+        height: 248
+      spriteId: ad28c16ed023c2a42a0a5f68bc70a02a
+    - name: pbreal (2)_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 0
+        y: -32
+        width: 384
+        height: 248
+      spriteId: 8e208501e8e3668459e53b17c3c18c56
+    - name: pbreal (2)_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 0
+        y: -32
+        width: 384
+        height: 248
+      spriteId: 78c30025fd717cd4da16bd7122a2bdf5
+    - name: pbreal (2)_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 0
+        y: -32
+        width: 384
+        height: 248
+      spriteId: 4daf861267873184e9a9384e99e3f67a
+    - name: pbreal (2)_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 0
+        y: -37
+        width: 384
+        height: 253
+      spriteId: 6ac51ad778b93774aa3cb476704a949b
+    - name: pbreal (2)_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 0
+        y: -40
+        width: 384
+        height: 256
+      spriteId: 1f6ecb674467d7b4b819f99c55f5bb09
+    - name: pbreal (2)_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 0
+        y: -43
+        width: 384
+        height: 259
+      spriteId: b21cd265cb853de4e8041d61b1df39e3
+    - name: pbreal (2)_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 0
+        y: -43
+        width: 384
+        height: 259
+      spriteId: f91006ff7ea789b40adb1291ebd44bc4
+    - name: pbreal (2)_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 0
+        y: -49
+        width: 384
+        height: 265
+      spriteId: 2d566dc19fc9e2c4fa73e6cd1928e18b
+    - name: pbreal (2)_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 0
+        y: -40
+        width: 384
+        height: 256
+      spriteId: 5a5d8c441ea22fc498361f204a2ab0bb
+    - name: pbreal (2)_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 0
+        y: -50
+        width: 384
+        height: 266
+      spriteId: ee7f00cb2da92cd46a56b2e3522f306c
+    - name: pbreal (2)_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 0
+        y: -50
+        width: 384
+        height: 266
+      spriteId: e0074fc7645bba041bbb13114e3ce1a8
+    - name: pbreal (2)_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 0
+        y: -50
+        width: 384
+        height: 266
+      spriteId: 818af12d0c7d4f54c9edb834f2025b85
+    - name: pbreal (2)_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 0
+        y: -50
+        width: 384
+        height: 266
+      spriteId: 5a4c575a2a3929c49a71a60454d88dd2
+    - name: pbreal (2)_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 0
+        y: -50
+        width: 384
+        height: 266
+      spriteId: 5c752064be8498947bc8cc613d50af5c
+    - name: pbreal (2)_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 0
+        y: -50
+        width: 384
+        height: 266
+      spriteId: 8c25353f89656994a92968ff2988a985
+    - name: pbreal (2)_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 0
+        y: -50
+        width: 384
+        height: 266
+      spriteId: 2b76608145a49c44298f2800ab450ade
+    - name: pbreal (2)_Frame_86
+      frameIndex: 86
+      cellRect:
+        x: 0
+        y: -50
+        width: 384
+        height: 266
+      spriteId: 214891bcc45f7654d85927b012b9ad0c
+    - name: pbreal (2)_Frame_87
+      frameIndex: 87
+      cellRect:
+        x: 0
+        y: -50
+        width: 384
+        height: 266
+      spriteId: d7667fe88643a16459df3d6e60cb6638
+    - name: pbreal (2)_Frame_88
+      frameIndex: 88
+      cellRect:
+        x: 0
+        y: -50
+        width: 384
+        height: 266
+      spriteId: a6db47be1d67f9f47a0b532be7affcbb
+    - name: pbreal (2)_Frame_89
+      frameIndex: 89
+      cellRect:
+        x: 0
+        y: -57
+        width: 384
+        height: 273
+      spriteId: 56786c6bdf7dda84e9f7e9484b857463
+    - name: pbreal (2)_Frame_90
+      frameIndex: 90
+      cellRect:
+        x: 0
+        y: -64
+        width: 384
+        height: 280
+      spriteId: 37951e207502e9c4eb76ba0d873ae737
+    - name: pbreal (2)_Frame_91
+      frameIndex: 91
+      cellRect:
+        x: 0
+        y: -74
+        width: 384
+        height: 290
+      spriteId: 48b74407b43318c47a99a24234643402
+    - name: pbreal (2)_Frame_92
+      frameIndex: 92
+      cellRect:
+        x: 0
+        y: -81
+        width: 384
+        height: 297
+      spriteId: f985c6353c8677c45a780e89bdd978af
+    - name: pbreal (2)_Frame_93
+      frameIndex: 93
+      cellRect:
+        x: 0
+        y: -105
+        width: 384
+        height: 321
+      spriteId: b9e00e11fa10dd1419813ab1db95296f
+    - name: pbreal (2)_Frame_94
+      frameIndex: 94
+      cellRect:
+        x: 0
+        y: -105
+        width: 384
+        height: 321
+      spriteId: 86e193d3ace491c42bd506e82fec367d
+    - name: pbreal (2)_Frame_95
+      frameIndex: 95
+      cellRect:
+        x: -11
+        y: -129
+        width: 395
+        height: 345
+      spriteId: 0d69c56205421a5469d63c0a7870596d
+    - name: pbreal (2)_Frame_96
+      frameIndex: 96
+      cellRect:
+        x: 0
+        y: 0
+        width: 384
+        height: 216
+      spriteId: a3a61336325f8ab4fae5c647e487d7c1
+    - name: pbreal (2)_Frame_97
+      frameIndex: 97
+      cellRect:
+        x: 0
+        y: 0
+        width: 384
+        height: 216
+      spriteId: 4d4ad48bc551f7446ad7ef107e85e0ec
+    - name: pbreal (2)_Frame_98
+      frameIndex: 98
+      cellRect:
+        x: 0
+        y: 0
+        width: 384
+        height: 216
+      spriteId: 9eee12449e3c32344971224c35ec76db
+    - name: pbreal (2)_Frame_99
+      frameIndex: 99
+      cellRect:
+        x: 0
+        y: 0
+        width: 384
+        height: 216
+      spriteId: c619d85279762f64abd6a3150c6f8db2
+    - name: pbreal (2)_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 0
+        y: -17
+        width: 384
+        height: 231
+      spriteId: b576f0961986c884e8a3535a490d5fc9
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 384, y: 216}

@@ -17,6 +17,8 @@ public class OrderQueue : MonoBehaviour
     public QPCFlavors qpcFlavors;
     public QPCSugar qpcSugar;
 
+    public Sussy sussy;
+
     void Start()
     {
         StartCoroutine(AddOrdersAtIntervals());
@@ -60,6 +62,7 @@ public class OrderQueue : MonoBehaviour
                     Debug.Log("BITCH IM IMPATIENT." + ordersQueue[i] + "IS REMOVED FROM QUEUE.");
                     ordersQueue.RemoveAt(i);
                     playerInput.removeQPC(i);
+                    sussy.susLvl += 10;
                 }
             }
         }

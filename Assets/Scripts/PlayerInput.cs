@@ -91,7 +91,7 @@ public class PlayerInput : MonoBehaviour
         // when u wanna switch stations
         if (Time.time - lastInputTime >= inputDelay) // did enough time pass ?!?!
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.A))
             {
                 if (currentStation > 0)
                 {
@@ -99,7 +99,7 @@ public class PlayerInput : MonoBehaviour
                     lastInputTime = Time.time;
                 }
             }
-            else if (Input.GetKeyDown(KeyCode.RightArrow))
+            else if (Input.GetKeyDown(KeyCode.D))
             {
                 if (currentStation < 5)
                 {

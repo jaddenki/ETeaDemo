@@ -10,6 +10,7 @@ using TMPro;
 
 public class PlayerInput : MonoBehaviour
 {
+    public Sussy sussy;
     public int currentStation = 0;
     public int moneyCount = 0;
     public TextMeshProUGUI moolah;
@@ -42,7 +43,8 @@ public class PlayerInput : MonoBehaviour
     public GameObject Qpc1;
     public GameObject Qpc2;
     public GameObject Qpc3;
-
+    public int decSus = -5;
+    public int increaseTheSus = 8;
     public GameObject[] qpcImages; // Array of QPC images
 
 
@@ -91,7 +93,7 @@ public class PlayerInput : MonoBehaviour
         // when u wanna switch stations
         if (Time.time - lastInputTime >= inputDelay) // did enough time pass ?!?!
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 if (currentStation > 0)
                 {
@@ -99,7 +101,7 @@ public class PlayerInput : MonoBehaviour
                     lastInputTime = Time.time;
                 }
             }
-            else if (Input.GetKeyDown(KeyCode.D))
+            else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 if (currentStation < 5)
                 {
@@ -212,7 +214,9 @@ public class PlayerInput : MonoBehaviour
                 {
                     Debug.Log("WRONGGGGGG.");
                     moneyCount -= 2;
-                    moolah.text = moneyCount.ToString();                    
+                    moolah.text = moneyCount.ToString();  
+                    sussy.IncSus(8);
+                                      
                 }
             }
             else

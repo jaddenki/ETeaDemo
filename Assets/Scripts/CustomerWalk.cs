@@ -53,7 +53,7 @@ public class CustomerWalk : MonoBehaviour
             yield return new WaitForSeconds(waitTime);
 
             // randomly choose an a character animation to play..
-            int randomAnimationIndex = Random.Range(0, 5);
+            int randomAnimationIndex = Random.Range(0, 4);
             Sprite[] selectedAnimation;
             // im about to choose which animation
             switch (randomAnimationIndex)
@@ -62,19 +62,13 @@ public class CustomerWalk : MonoBehaviour
                     selectedAnimation = cust1;
                     break;
                 case 1:
-                    selectedAnimation = cust1;
+                    selectedAnimation = cust2;
                     break;
                 case 2:
-                    selectedAnimation = cust1;
+                    selectedAnimation = cust3;
                     break;
                 case 3:
-                    selectedAnimation = cust1;
-                    break;
-                case 4:
-                    selectedAnimation = cust1;
-                    break;
-                case 5:
-                    selectedAnimation = cust1;
+                    selectedAnimation = cust4;
                     break;
                 default:
                     selectedAnimation = cust1; // default ahh
@@ -92,7 +86,6 @@ public class CustomerWalk : MonoBehaviour
         cf = 0;
         while (cf < chosenAnim.Length)
         {
-            Debug.Log(cf);
             // warning that cust gonna check. this is where u wanna pput the warning sign animation
             if((cf == 18) || (cf == 28) || (cf == 65) || (cf == 70))
             {

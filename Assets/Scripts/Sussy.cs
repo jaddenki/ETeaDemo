@@ -7,7 +7,7 @@ public class Sussy : MonoBehaviour
     // sus info needed
     public int susLvl = 0; 
     private float currentSusLvl = 0f; //d isplayed suspicion level for smooth transition
-    public int increaseSus = 8; // Ttsting number
+    public int increaseSus = 15; // Ttsting number
     public int maxSus = 78;
 
     // sus bar
@@ -29,11 +29,11 @@ public class Sussy : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        /*if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("ik ur greasy hands r on the space bar");
             IsSussy();
-        }
+        }*/
 
         // so its smooootoh
         currentSusLvl = Mathf.Lerp(currentSusLvl, susLvl, Time.deltaTime * susSpeed);
@@ -68,6 +68,7 @@ public class Sussy : MonoBehaviour
     public void IncSus(int inc)
     {
         susLvl += inc;
+        Debug.Log("I inc by " + inc);
 
         susLvl = Mathf.Clamp(susLvl, 0, maxSus);
         if (susLvl > maxSus)

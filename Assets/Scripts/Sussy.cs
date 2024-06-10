@@ -25,6 +25,8 @@ public class Sussy : MonoBehaviour
     public SpriteRenderer baibai;
     public GameObject[] uiElementsToHide;
 
+    public AudioSource sus;
+
     void Start()
     {
         baibai.enabled = false;
@@ -70,6 +72,7 @@ public class Sussy : MonoBehaviour
         Debug.Log("Player is at + " + playerInput.currentStation);
         if ((playerInput.currentStation == 1) || (playerInput.currentStation == 3))
         {
+            sus.Play();
             Debug.Log(" Shit u were seen! ");
             susLvl += increaseSus;
             return true;

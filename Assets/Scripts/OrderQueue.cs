@@ -19,6 +19,8 @@ public class OrderQueue : MonoBehaviour
 
     public Sussy sussy;
 
+    public AudioSource damnbro;
+
     void Start()
     {
         StartCoroutine(AddOrdersAtIntervals());
@@ -59,6 +61,7 @@ public class OrderQueue : MonoBehaviour
             {
                 if (ordersQueue[i].IsExpired())
                 {
+                    damnbro.Play();
                     Debug.Log("BITCH IM IMPATIENT." + ordersQueue[i] + "IS REMOVED FROM QUEUE.");
 
                     ordersQueue.RemoveAt(i);

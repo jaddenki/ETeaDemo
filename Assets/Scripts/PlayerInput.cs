@@ -60,6 +60,8 @@ public class PlayerInput : MonoBehaviour
     public DisplayDrink displayDrink;
 
     public AudioSource move;
+    public AudioSource nicejob;
+    public AudioSource niceonedumbass;
 
     void Start()
     {
@@ -221,6 +223,7 @@ public class PlayerInput : MonoBehaviour
 
                 if (CheckOrderMatch(currentOrderArray[0], currentOrderArray[1], currentOrderArray[2]))
                 {
+                    nicejob.Play();
                     Debug.Log("slayed!");
                     Debug.Log("Order served. Remaining Orders: " + orderQueue.ordersQueue.Count);
 
@@ -236,6 +239,7 @@ public class PlayerInput : MonoBehaviour
                 }
                 else
                 {
+                    niceonedumbass.Play();
                     Debug.Log("WRONGGGGGG.");
                     moneyCount -= 2;
                     moolah.text = moneyCount.ToString();  

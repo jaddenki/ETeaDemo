@@ -16,7 +16,7 @@ public class Sussy : MonoBehaviour
     public SpriteRenderer barSpriteRenderer; 
 
     // for da smooth bar
-    public float susSpeed = 1f; // interpolation speed
+    public float susSpeed = 0.2f; // interpolation speed
 
     // get info from userInput
     public PlayerInput playerInput;
@@ -43,8 +43,9 @@ public class Sussy : MonoBehaviour
         // so its smooootoh
         currentSusLvl = Mathf.Lerp(currentSusLvl, susLvl, Time.deltaTime * susSpeed);
         SusBar(currentSusLvl);
-        if (currentSusLvl >= maxSus)
+        if (susLvl >= maxSus)
         {
+            susLvl = 0;
             Debug.Log(" TOO MUCH SUSSY");
             StartCoroutine(GameOver());
         }
@@ -64,15 +65,17 @@ public class Sussy : MonoBehaviour
     }
 
     // will run when the customer turns their head
-    public void IsSussy()
+    public bool IsSussy()
     {
         Debug.Log("Player is at + " + playerInput.currentStation);
         if ((playerInput.currentStation == 1) || (playerInput.currentStation == 3))
         {
             Debug.Log(" Shit u were seen! ");
             susLvl += increaseSus;
+            return true;
             //IncSus(increaseSus);
         }
+        return false;
     }
 
 
@@ -116,7 +119,6 @@ public class Sussy : MonoBehaviour
 
     private IEnumerator GameOver()
     {
- 
         baibai.enabled = true;
         foreach (GameObject uiElement in uiElementsToHide)
         {

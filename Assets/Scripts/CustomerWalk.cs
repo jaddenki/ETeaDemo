@@ -22,7 +22,18 @@ public class CustomerWalk : MonoBehaviour
     public float maxInterval = 6.0f;
 
     public float frameInterval = .2f; // 200 ms
+    public float fISmall = 0.1f;
     private int cf; // current frame
+    private int cfw; // current frame for warning animations
+    private bool DoIStart;
+
+    // warning animations
+    public SpriteRenderer warning;
+    public Sprite[] warningImg;
+    public SpriteRenderer found;
+    public Sprite[] foundImg;
+    public GameObject warningObj;
+    public GameObject foundObj;
 
         void Start()
     {
@@ -30,7 +41,8 @@ public class CustomerWalk : MonoBehaviour
         {
             anim = GetComponent<SpriteRenderer>();
         }
-
+        foundObj.SetActive(false);
+        warningObj.SetActive(false);
         // lets wait!!! let the alien chil!!!
         StartCoroutine(WaitBeforeAnimation());
         StartCoroutine(ChooseAnimation());
@@ -87,20 +99,60 @@ public class CustomerWalk : MonoBehaviour
         while (cf < chosenAnim.Length)
         {
             // warning that cust gonna check. this is where u wanna pput the warning sign animation
-            if((cf == 18) || (cf == 28) || (cf == 65) || (cf == 70))
+            if((cf == 13) || (cf == 28) || (cf == 55) || (cf == 70))
             {
                 Debug.Log("Hoh hoh imma check");
+                StartCoroutine(WarningAnimation());
+                //yield return new WaitForSeconds(fISmall * 4);
             }
+
+
             // cust is checking
             if ((cf == 18) || (cf == 33) || (cf == 60) || (cf == 75))
             {
-                sussy.IsSussy();
+                DoIStart = sussy.IsSussy();
+
+                if (DoIStart)
+                {
+                    StartCoroutine(FoundAnimation());
+                    //yield return new WaitForSeconds(fISmall * 4);
+                }
             }
         anim.sprite = chosenAnim[cf];
         cf++;
         yield return new WaitForSeconds(frameInterval);
         }
         anim.sprite = Clear;
+    }
+
+    private IEnumerator WarningAnimation()
+    {
+        warningObj.SetActive(true);
+        Debug.Log("warning animation");
+        cfw = 0;
+        while (cfw < warningImg.Length)
+        {
+        warning.sprite = warningImg[cfw];
+        cfw++;
+        yield return new WaitForSeconds(fISmall);
+        }
+        warning.sprite = Clear;
+        warningObj.SetActive(false);
+    }
+
+    private IEnumerator FoundAnimation()
+    {
+        Debug.Log("Found animation");
+        foundObj.SetActive(true);
+        cfw = 0;
+        while (cfw < foundImg.Length)
+        {
+        found.sprite = foundImg[cfw];
+        cfw++;
+        yield return new WaitForSeconds(fISmall);
+        }
+        found.sprite = Clear;
+        foundObj.SetActive(false);
     }
 
 }

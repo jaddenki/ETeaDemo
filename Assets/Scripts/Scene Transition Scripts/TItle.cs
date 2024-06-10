@@ -9,6 +9,7 @@ public class TItle : MonoBehaviour
     public SpriteRenderer hai;
     public Sprite[] haiList;
     public float fii = 0.4f;
+    public AudioSource title;
 
 
     public void NewGameButton()
@@ -17,7 +18,9 @@ public class TItle : MonoBehaviour
     }
     void Start()
     {
-        StartCoroutine(LittleSadHai());   
+        
+        StartCoroutine(LittleSadHai());
+        title.Play();
     }
 
     // Update is called once per frame

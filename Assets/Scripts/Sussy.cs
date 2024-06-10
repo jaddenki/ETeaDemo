@@ -110,8 +110,8 @@ public class Sussy : MonoBehaviour
     // randomly decrease or increas cuz i want it
     void SussyRandom()
     {
-        int randinc = Random.Range(0, 3);
-        int randdec = Random.Range(0, 4);
+        int randinc = Random.Range(0, 1);
+        int randdec = Random.Range(0, 3);
         susLvl += randinc;
         susLvl -= randdec;
         susLvl = Mathf.Clamp(susLvl, 0, maxSus);

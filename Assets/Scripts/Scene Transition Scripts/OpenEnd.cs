@@ -22,12 +22,14 @@ public class OpenEnd : MonoBehaviour
     {
         SceneManager.LoadScene("Title");
     }
+
+    public AudioSource wompwomp;
     void Start()
     {
         StartCoroutine(LittleSad());
         StartCoroutine(FloatHand());
         StartCoroutine(Opening());
-        
+        wompwomp.Play();
     }
 
     // Update is called once per frame

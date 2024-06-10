@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Sussy : MonoBehaviour
 {
     // sus info needed
     public int susLvl = 0; 
     private float currentSusLvl = 0f; //d isplayed suspicion level for smooth transition
-    public int increaseSus = 15; // Ttsting number
+    public int increaseSus = 10; // Ttsting number
     public int maxSus = 78;
 
     // sus bar
@@ -15,31 +16,40 @@ public class Sussy : MonoBehaviour
     public SpriteRenderer barSpriteRenderer; 
 
     // for da smooth bar
-    public float susSpeed = 2f; // interpolation speed
+    public float susSpeed = 1f; // interpolation speed
 
     // get info from userInput
     public PlayerInput playerInput;
 
+    public Sprite[] gameOverAnim;
+    public SpriteRenderer baibai;
+    public GameObject[] uiElementsToHide;
+
     void Start()
     {
-
+        baibai.enabled = false;
         SusBar(0);
         StartCoroutine(SussySometimesRandom());
     }
 
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("ik ur greasy hands r on the space bar");
             IsSussy();
-        }*/
+        }
 
         // so its smooootoh
         currentSusLvl = Mathf.Lerp(currentSusLvl, susLvl, Time.deltaTime * susSpeed);
-
-        
         SusBar(currentSusLvl);
+        if (currentSusLvl >= maxSus)
+        {
+            Debug.Log(" TOO MUCH SUSSY");
+            StartCoroutine(GameOver());
+        }
+
+
     }
 
     // randomly adjust suspicion level every few seconds
@@ -60,7 +70,8 @@ public class Sussy : MonoBehaviour
         if ((playerInput.currentStation == 1) || (playerInput.currentStation == 3))
         {
             Debug.Log(" Shit u were seen! ");
-            IncSus(increaseSus);
+            susLvl += increaseSus;
+            //IncSus(increaseSus);
         }
     }
 
@@ -68,7 +79,7 @@ public class Sussy : MonoBehaviour
     public void IncSus(int inc)
     {
         susLvl += inc;
-        Debug.Log("I inc by " + inc);
+        //Debug.Log("I inc by " + inc);
 
         susLvl = Mathf.Clamp(susLvl, 0, maxSus);
         if (susLvl > maxSus)
@@ -101,5 +112,25 @@ public class Sussy : MonoBehaviour
         susLvl += randinc;
         susLvl -= randdec;
         susLvl = Mathf.Clamp(susLvl, 0, maxSus);
+    }
+
+    private IEnumerator GameOver()
+    {
+ 
+        baibai.enabled = true;
+        foreach (GameObject uiElement in uiElementsToHide)
+        {
+            uiElement.SetActive(false);
+        }
+
+       foreach (var frame in gameOverAnim)
+        {
+            baibai.sprite = frame;
+            yield return new WaitForSeconds(0.5f);
+        }
+        yield return new WaitForSeconds(2f);
+
+        SceneManager.LoadScene("End");
+ 
     }
 }

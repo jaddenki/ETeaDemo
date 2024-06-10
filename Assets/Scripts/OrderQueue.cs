@@ -8,7 +8,7 @@ using UnityEngine;
 public class OrderQueue : MonoBehaviour
 {
     public List<Order> ordersQueue = new List<Order>();
-    public int maxOrders = 3;
+    public int maxOrders = 2;
     public float orderInterval = 4f; // 20 seconds?!?!?!?
     public int orderNumber = 0;
     public PlayerInput playerInput;
@@ -43,7 +43,8 @@ public class OrderQueue : MonoBehaviour
                 Debug.Log("dis many in queue:  " + ordersQueue.Count);
                 Debug.Log("ququ full");
             }
-           yield return new WaitForSeconds(orderInterval);
+            yield return new WaitForSeconds(orderInterval);
+           
         }
     }
 
@@ -58,8 +59,8 @@ public class OrderQueue : MonoBehaviour
             {
                 if (ordersQueue[i].IsExpired())
                 {
-                    Debug.Log(i);
                     Debug.Log("BITCH IM IMPATIENT." + ordersQueue[i] + "IS REMOVED FROM QUEUE.");
+
                     ordersQueue.RemoveAt(i);
                     playerInput.removeQPC(i);
                     sussy.susLvl += 10;
@@ -91,12 +92,11 @@ public class OrderQueue : MonoBehaviour
     {
         if (ordersQueue.Count > 0)
         {
-            ordersQueue.RemoveAt(0); // remove first order form list
-            orderNumber--;
+            //orderNumber--;
             //qpcDisplayManager.UpdateQPCDisplays(ordersQueue);
-            qpcToppings.UpdateToppingDisplays(ordersQueue);
-            qpcFlavors.UpdateFlavorDisplays(ordersQueue);
-            qpcSugar.UpdateSugarDisplays(ordersQueue);
+            //qpcToppings.UpdateToppingDisplays(ordersQueue);
+            //qpcFlavors.UpdateFlavorDisplays(ordersQueue);
+            //qpcSugar.UpdateSugarDisplays(ordersQueue);
         }
     }
 

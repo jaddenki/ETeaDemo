@@ -39,5 +39,3 @@ public class ChangeToppings : MonoBehaviour
         return toppingSprites[(int)topping];
     }
 }
-
-

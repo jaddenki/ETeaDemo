@@ -10,10 +10,12 @@ public class TItle : MonoBehaviour
     public Sprite[] haiList;
     public float fii = 0.4f;
     public AudioSource title;
+    public AudioSource select;
 
 
     public void NewGameButton()
     {
+        select.Play();
         SceneManager.LoadScene("Intro");
     }
     void Start()

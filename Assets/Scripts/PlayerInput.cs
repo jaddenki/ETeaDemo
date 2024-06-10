@@ -59,7 +59,7 @@ public class PlayerInput : MonoBehaviour
 
     public DisplayDrink displayDrink;
 
-
+    public AudioSource move;
 
     void Start()
     {
@@ -82,6 +82,7 @@ public class PlayerInput : MonoBehaviour
         displayDrink.LetGo();
         canClickQPC(false);
         moolah.text = moneyCount.ToString();
+
     }
 
 
@@ -97,6 +98,7 @@ public class PlayerInput : MonoBehaviour
                 {
                     currentStation--;
                     lastInputTime = Time.time;
+                    move.Play();
                 }
             }
             else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
@@ -105,6 +107,7 @@ public class PlayerInput : MonoBehaviour
                 {
                     currentStation++;
                     lastInputTime = Time.time;
+                    move.Play();
                 }
             }
         }

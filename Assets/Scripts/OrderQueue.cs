@@ -27,6 +27,12 @@ public class OrderQueue : MonoBehaviour
         StartCoroutine(CheckOrderExpirations());
     }
 
+    void Update()
+    {
+        Clock clock = FindObjectOfType<Clock>();
+        orderInterval = 4f * (1 / clock.difficulty);
+    }
+
     private IEnumerator AddOrdersAtIntervals()
     {
         while (true) // infinite loop for continuous order generation

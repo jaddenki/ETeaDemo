@@ -18,8 +18,8 @@ public class CustomerWalk : MonoBehaviour
     public Sprite[] cust5;
 
     // time interval to trigger animations
-    public float minInterval = 4.0f;
-    public float maxInterval = 6.0f;
+    public float minInterval = 8.0f;
+    public float maxInterval = 10.0f;
 
     public float frameInterval = .2f; // 200 ms
     public float fISmall = 0.1f;
@@ -35,7 +35,7 @@ public class CustomerWalk : MonoBehaviour
     public GameObject warningObj;
     public GameObject foundObj;
 
-        void Start()
+    void Start()
     {
         if (anim == null)
         {
@@ -49,6 +49,13 @@ public class CustomerWalk : MonoBehaviour
 
 
    
+    }
+
+    void Update()
+    {
+        Clock clock = FindObjectOfType<Clock>();
+        minInterval = 8.0f * (1 / clock.difficulty);
+        maxInterval = 10.0f * (1 / clock.difficulty);
     }
 
     private IEnumerator WaitBeforeAnimation()

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Clock : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class Clock : MonoBehaviour
     public float test = 300f;
     int change = 0;
     public bool isDay;
+
+    public float difficulty;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,13 +41,15 @@ public class Clock : MonoBehaviour
             timeRenderer.sprite = timeSprites[change];
         }
 
+        difficulty = (-0.037037f)*(change-4.5f)*(change-4.5f)+1.75f; //fucken magic
+
 
         if (timeLeft <= 0.0f)
         {
             timeRenderer.sprite = timeSprites[9];
             isDay = false;
-            
-            //code here that says to end the day
+
+            SceneManager.LoadScene("End2");
         }
 
 

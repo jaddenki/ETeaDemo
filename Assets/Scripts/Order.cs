@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public enum Flavor
@@ -36,7 +38,13 @@ public class Order
     
     // customer patience shit
     public float creationTime; 
-    public float lifespan = 20f; 
+    public float lifespan = 25f;
+
+    void Start() { }
+
+    void Update()
+    {
+    }
 
     public static Order GenerateRandomOrder()
     {

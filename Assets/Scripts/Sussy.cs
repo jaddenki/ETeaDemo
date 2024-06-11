@@ -36,10 +36,22 @@ public class Sussy : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    Debug.Log("ik ur greasy hands r on the space bar");
+        //    IsSussy();
+        //}
+
+        if(susLvl > 0)
         {
-            Debug.Log("ik ur greasy hands r on the space bar");
-            IsSussy();
+            float test = 0;
+            float checkTime = 0;
+            checkTime += Time.deltaTime;
+            if(checkTime-test > 5f)
+            {
+                susLvl--;
+            }
+            
         }
 
         // so its smooootoh

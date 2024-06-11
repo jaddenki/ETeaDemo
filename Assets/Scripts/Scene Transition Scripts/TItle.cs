@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
 using UnityEngine.SceneManagement;
 
 public class TItle : MonoBehaviour
@@ -10,44 +9,51 @@ public class TItle : MonoBehaviour
     public Sprite[] haiList;
     public float fii = 0.4f;
     public AudioSource title;
+<<<<<<< Updated upstream
     public AudioSource select;
 
+=======
+    public Tutorial tutorial;
+    
+    public GameObject[] buttons2Hide;
+>>>>>>> Stashed changes
 
     public void NewGameButton()
     {
         select.Play();
         SceneManager.LoadScene("Intro");
     }
+
+    public void ShowTutorial()
+    {
+        // Hide all the buttons when showing the tutorial
+        foreach (GameObject uiElement in buttons2Hide)
+        {
+            uiElement.SetActive(false);
+        }
+
+        tutorial.canShow = true;
+        tutorial.tutorialYas.SetActive(true);
+
+        // Ensure the first slide is shown when tutorial starts
+        tutorial.spriteIndex = 0;
+        tutorial.tut.sprite = tutorial.tutSlides[0];
+    }
+
     void Start()
     {
-        
         StartCoroutine(LittleSadHai());
         title.Play();
     }
-
-    // Update is called once per frame
- 
-
 
     private IEnumerator LittleSadHai()
     {
         int x = 1;
         while(true)
         {
-            if (x % 2 == 1)
-            {
-                hai.sprite = haiList[0];
-            }
-            else
-            {
-                hai.sprite = haiList[1];
-            }
+            hai.sprite = haiList[x % haiList.Length];
             yield return new WaitForSeconds(fii);
-            
             x++;
         }
-        
     }
-
-
 }

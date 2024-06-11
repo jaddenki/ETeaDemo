@@ -9,7 +9,7 @@ public class Clock : MonoBehaviour
     public SpriteRenderer timeRenderer;
     public AudioSource ETea;
 
-    public float timeLeft = 310f;
+    public float timeLeft = 300f;
     public float test = 300f;
     int change = 0;
     public bool isDay;
@@ -29,7 +29,7 @@ public class Clock : MonoBehaviour
     {
         timeLeft -= Time.deltaTime;
 
-        if(test >= timeLeft + (100.0f / 3))
+        if(test >= timeLeft + (300.0f / 9))
         {
             isDay = true;
             change++;
@@ -48,10 +48,15 @@ public class Clock : MonoBehaviour
         {
             timeRenderer.sprite = timeSprites[9];
             isDay = false;
-
+            StartCoroutine(wait());
             SceneManager.LoadScene("End2");
         }
 
 
+    }
+
+    public IEnumerator wait()
+    {
+        yield return new WaitForSeconds(12);
     }
 }

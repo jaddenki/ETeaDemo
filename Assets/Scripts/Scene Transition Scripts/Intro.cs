@@ -11,6 +11,8 @@ public class Intro : MonoBehaviour
     public Sprite[] frames;
     public SpriteRenderer anime;
     public float fR = 0.4f; // framerate
+
+    public AudioSource intro;
     
     void Start()
     {

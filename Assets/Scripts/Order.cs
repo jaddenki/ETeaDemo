@@ -38,7 +38,7 @@ public class Order
     
     // customer patience shit
     public float creationTime; 
-    public float lifespan = 25f;
+    public float lifespan = 20f;
 
     void Start() { }
 

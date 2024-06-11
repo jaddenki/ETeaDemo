@@ -1283,6 +1283,7 @@ MonoBehaviour:
   timeLeft: 300
   test: 300
   isDay: 0
+  difficulty: 0
 --- !u!212 &271690808
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4084,7 +4085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   susLvl: 0
-  increaseSus: 15
+  increaseSus: 8
   maxSus: 78
   barFrames:
   - {fileID: 21300000, guid: 27c1be5d4be4127478a02b14a7d917fe, type: 3}

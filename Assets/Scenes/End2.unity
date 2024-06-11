@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 54c727ae043f2024faf019fd61adf90f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d26b489c8b13e484893daa67d3a9c789, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -799,7 +799,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b74ab64186f944d62a5a00df6513a70a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 63f8ebca4290c4c3a8ca587ab09a4278, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -907,15 +907,15 @@ MonoBehaviour:
   frameInterval: 0.8
   littleGuy: {fileID: 255905017}
   littleGuyList:
-  - {fileID: 21300000, guid: 54c727ae043f2024faf019fd61adf90f, type: 3}
-  - {fileID: 21300000, guid: 0fa3d668d9c8b2a4c9a9690edf08a1c0, type: 3}
+  - {fileID: 21300000, guid: d26b489c8b13e484893daa67d3a9c789, type: 3}
+  - {fileID: 21300000, guid: bc5424deaf2d2c24ebf7d6be7c1186c8, type: 3}
   frameIntervalLil: 0.4
   hand: {fileID: 436986679}
   handList:
   - {fileID: 21300000, guid: 6da0f04a738b8a84f949ad7b969b1f1e, type: 3}
   - {fileID: 21300000, guid: 3baf697b5d3eab9498744b553fdcfc52, type: 3}
   frameIntervalHand: 1.4
-  wompwomp: {fileID: 0}
+  wompwomp: {fileID: 1458428440}
 --- !u!4 &1458428442
 Transform:
   m_ObjectHideFlags: 0
@@ -984,7 +984,7 @@ MonoBehaviour:
   _textMeshPro: {fileID: 1569366520}
   stringArray:
   - '                                                       '
-  - -RESTART?
+  - '- nice'
   timeBtwnChar: 0.2
   timeBtwnWords: 4
 --- !u!114 &1569366520
@@ -1017,7 +1017,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4289020159
-  m_fontColor: {r: 1, g: 0.25, b: 0.6480645, a: 1}
+  m_fontColor: {r: 0.44124722, g: 1, b: 0.25098038, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1137,7 +1137,7 @@ MonoBehaviour:
   _textMeshPro: {fileID: 1593735473}
   stringArray:
   - '                                                       '
-  - -RESTART?
+  - '- nice'
   timeBtwnChar: 0.2
   timeBtwnWords: 4
 --- !u!114 &1593735473
@@ -1856,7 +1856,7 @@ MonoBehaviour:
   _textMeshPro: {fileID: 1895831732}
   stringArray:
   - '                                                              '
-  - YOU'RE AN ALIEN?!?!?!?!
+  - 'YOU''RE AN ALIEN! : 3'
   timeBtwnChar: 0.1
   timeBtwnWords: 3
 --- !u!114 &1895831732
@@ -1942,7 +1942,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -553.927, y: 0, z: -644.4161, w: -119.47042}
+  m_margin: {x: 45.190063, y: 0, z: -644.4161, w: -119.47042}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2009,7 +2009,7 @@ MonoBehaviour:
   _textMeshPro: {fileID: 2039319152}
   stringArray:
   - '                                  '
-  - WAIT...
+  - AWW!
   timeBtwnChar: 0.3
   timeBtwnWords: 2.1
 --- !u!114 &2039319152

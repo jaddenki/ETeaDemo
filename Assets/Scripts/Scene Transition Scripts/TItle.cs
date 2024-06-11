@@ -9,14 +9,13 @@ public class TItle : MonoBehaviour
     public Sprite[] haiList;
     public float fii = 0.4f;
     public AudioSource title;
-<<<<<<< Updated upstream
+
     public AudioSource select;
 
-=======
     public Tutorial tutorial;
     
     public GameObject[] buttons2Hide;
->>>>>>> Stashed changes
+
 
     public void NewGameButton()
     {

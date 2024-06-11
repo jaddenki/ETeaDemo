@@ -51,3 +51,7 @@ public class Intro : MonoBehaviour
         canvasGroup.alpha = 0;
     }
 }
+
+
+
+

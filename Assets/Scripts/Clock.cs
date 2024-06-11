@@ -9,7 +9,7 @@ public class Clock : MonoBehaviour
     public SpriteRenderer timeRenderer;
     public AudioSource ETea;
 
-    public float timeLeft = 300f;
+    public float timeLeft = 310f;
     public float test = 300f;
     int change = 0;
     public bool isDay;
